@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+      font-family: 'Comic_Sans', system-ui, sans-serif;
+    }
+  }
+
+
+
+.banner-txt-intro {
+    @apply font-bold py-2 w-full text-lg;
+}
+.banner-txt-title {
+    @apply font-bold py-2 w-full text-8xl font-cedarvilleCursive;
+}
+.banner-txt-subtitle {
+    @apply font-bold py-2 w-full text-base;
+}
+
+.banner-btn {
+    @apply font-bold py-2 w-full;
+}
+.banner-btn-pink {
+    @apply bg-rose-600 text-white;
+}
+.banner-btn-pink-no-h {
+    @apply bg-rose-600 text-white;
+}
+.banner-btn-pink:hover {
+    @apply bg-white text-rose-600;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded-full;
+}
+.btn-pink {
+    @apply bg-rose-600 text-white border-2 border-white;
+}
+.btn-pink-no-h {
+    @apply bg-rose-600 text-white border-2 border-white;
+}
+.btn-pink:hover {
+    @apply bg-white text-rose-600 border-2 border-rose-600;
+}
