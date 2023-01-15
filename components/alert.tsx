@@ -33,10 +33,10 @@ const buildStrTimeLeft = () => {
 
     let out = ""
     if (diffInDays>0) {
-      out = `${Number(diffInDays)} jours, `
+      out = `${Number(diffInDays)} jours`
     }
 
-    out += `${pad(diffInHours, 2)}h ${pad(diffInMin, 2)}min`
+    // out += `${pad(diffInHours, 2)}h ${pad(diffInMin, 2)}min`
     // out += `${pad(diffInHours, 2)}:${pad(diffInMin, 2)}:${pad(diffInSec, 2)}`
     return out
   }
@@ -66,8 +66,7 @@ const Alert = ({ preview }: Props) => {
       })}
     >
       <div>
-        <div className="py-2 text-center text-sm">
-          
+        <div className="py-2 text-center text-lg">
             {alertStr}             
         </div>
       </div>
