@@ -23,11 +23,10 @@ const RsvpHome = () => {
             13th to 15th October 2023 · Formentera, Spain
             </div>
 
-            <Link href='/rsvp'>
-                <div className="banner-btn banner-btn-pink text-center">
+            <Link href='/rsvp' className="banner-btn banner-btn-pink text-center">
                     RSVP
-                </div> 
             </Link>
+
         </div>
     </div>
   )
