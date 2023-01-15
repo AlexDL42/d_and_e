@@ -10,7 +10,7 @@ const Footer = () => {
           </div>
           <div className="w-full text-center py-10 border-t border-slate-200 ">
             <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
+              href={`/`}
               className="hover:underline"
             >
               Made with 🌷 and ❤️

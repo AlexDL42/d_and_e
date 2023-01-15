@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const LinkCustom = ({ href, children }) => {
 
-  const clName = "hover:underline  hover:text-slate-600 m-6"
+  const clName = "hover:underline  hover:text-white m-6"
   return (
     <div className={clName}>
       <Link href={href}>

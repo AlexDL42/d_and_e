@@ -18,13 +18,16 @@ export default function RsvpPage () {
 
             <div>
       
-              <div className="text-blue-900 bg-aysCoverOne bg-no-repeat bg-cover bg-center bg-fixed">
+              <div className="text-blue-900 bg-aysCover bg-no-repeat bg-cover bg-center bg-fixed">
                 <Header/>
-                <div className="bg-white bg-opacity-50 min-w-screen">
-                  <div className="flex justify-center font-bold text-blue-700 py-20 text-xl md:text-2xl lg:text-4xl font-bold text-center md:text-left">
+
+                <div className="bg-white bg-opacity-50">
+                <div className="flex justify-center font-bold text-black pt-32 pb-20 text-xl md:text-2xl lg:text-4xl font-bold text-center md:text-left">
                     Welcome to the last paradise of the Mediterranean
-                  </div>
+                </div>
+                <div className="min-w-screen">
                   <AboutYourStayContent/>
+                </div>
                 </div>
               </div>
               

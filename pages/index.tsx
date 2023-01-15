@@ -11,9 +11,12 @@ export default function Index() {
           <title>Mariage de Delphine & Etienne - Formentera, 2023</title>
         </Head>
         <div className="h-full w-full m-0">
-          <div className="text-black bg-homeCoverAltTwo bg-no-repeat bg-auto bg-center bg-fixed h-full m-0">
+          <div className="text-black bg-homeCover bg-no-repeat bg-cover bg-center bg-fixed h-full m-0">
             <Header/>
-            <RsvpHome/>
+            <div className="bg-white bg-opacity-50">
+              <RsvpHome/>
+            </div>
+            
           </div>
         </div>
       </Layout>

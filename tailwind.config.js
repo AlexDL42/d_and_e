@@ -15,13 +15,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero': "url('../public/assets/blog/preview/cover.jpg')",
-        'homeCover': "url('../public/assets/covers/homeCover.jpeg')",
-        'homeCoverAlt': "url('../public/assets/covers/homeCover_alt.png')",
-        'homeCoverAltOne': "url('../public/assets/covers/homeCover_alt_1.png')",
-        'homeCoverAltTwo': "url('../public/assets/covers/homeCover_alt_2.jpg')",
-
-        'aysCover': "url('../public/assets/covers/aysCover.jpeg')",
-        'aysCoverOne': "url('../public/assets/covers/aysCover_1.jpg')",
+        'homeCover': "url('https://iloveformentera.com/wp-content/uploads/2017/08/CalaSaona-1024x680.jpg')",
+        'aysCover': "url('https://www.ibizagocar.com/wp-content/uploads/2016/08/how-to-go-from-ibiza-to-formentera-ibizagocar-2-1024x614.jpg')",
+        'planningCover': "url('https://rare-gallery.com/mocahbig/466717-boat-vehicle-water-sea-aerial-view-sailboats-top-view.jpg')",
       },
       colors: {
         'accent-1': '#FAFAFA',
