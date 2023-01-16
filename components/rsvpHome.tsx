@@ -7,19 +7,19 @@ const RsvpHome = () => {
     <div className="w-full h-full flex flex-col justify-space items-center">
 
         <div className="banner-txt-intro text-center mt-10">
-            Heidi and Hugh Taylor and Mel and David Hollingworth cordially invite you to the Wedding of
+          Titi et Toto Taylor ainsi que IndividuA and IndividuB Hollingworth vous invite cordialement au mariage de
         </div>
 
         <div className="banner-txt-title text-center my-10">
-        Delphine & Etienne
+          Delphine & Etienne
         </div>
 
         <div className="banner-txt-subtitle text-center mb-10">
-        13th to 15th October 2023 · Formentera, Spain
+          1-7 Septembre 2023 · Formentera, Spain
         </div>
 
         <Link href='/rsvp' className="banner-btn banner-btn-pink text-center">
-                RSVP
+          RSVP
         </Link>
 
     </div>

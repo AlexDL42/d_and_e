@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const LinkCustom = ({ href, children }) => {
 
-  const clName = "hover:underline  hover:text-white m-6"
+  const clName = "hover:underline hover:text-white m-4"
   return (
     <div className={clName}>
       <Link href={href}>
@@ -16,7 +16,7 @@ const LinkCustom = ({ href, children }) => {
 
 const Header = () => {
   return (
-    <div className="min-w-screen flex flex-row flex-wrap justify-between items-center pb-10 pr-12 pl-12">
+    <div className="min-w-full flex flex-row flex-wrap justify-between items-center pb-10 px-12">
       <div className="text-2xl md:text-4xl">
         <LinkCustom href="/">
           Home
@@ -28,10 +28,13 @@ const Header = () => {
         <LinkCustom href="/planning">
           Planning
         </LinkCustom>
-        <LinkCustom href="/about-your-stay">
-          About your stay
+        <LinkCustom href="/votre-sejour">
+          Votre Sejour
         </LinkCustom>
-        <button className="btn btn-pink max-h-14 flex items-center">
+        <LinkCustom href="/liste">
+          Contributer
+        </LinkCustom>
+        <button className="btn btn-pink max-h-14 flex items-center m-4">
           <Link href="/rsvp">
             RSVP
           </Link>

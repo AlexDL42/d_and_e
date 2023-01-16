@@ -2,29 +2,7 @@ import React from "react";
 import { AddToCal } from "./add-to-cal-button";
 import { LocationButton } from "./location-button";
 import {posts} from '../public/assets/events';
-
-
-
-const monthShort = [
-    'Jan',
-    'Fev',
-    'Mar',
-    'Avr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aout',
-    'Sept',
-    'Oct',
-    'Nov',
-    'Dec'
-]
-const formatDateShort = (dt) => {
-    let out =  ""
-    let tmp = dt.split('-')
-    out = `${tmp[2]} ${monthShort[Number(tmp[1])-1]}.`
-    return out
-}
+import {formatDateShort} from '../lib/utils';
 
 
 export default function PlanningContent() {

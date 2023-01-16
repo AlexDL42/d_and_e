@@ -2,6 +2,8 @@ import RsvpHome from '../components/rsvpHome'
 import Header from '../components/header'
 import Layout from '../components/layout'
 import Head from 'next/head'
+import HomeContent from '../components/home-content'
+
 
 export default function Index() {
   return (
@@ -19,6 +21,9 @@ export default function Index() {
                           Nous sommes impatients de partager ce moment avec vous!
                       </div>
                       <RsvpHome/>
+
+                      <HomeContent/>
+
                   </div>   
               </div>
           </div>

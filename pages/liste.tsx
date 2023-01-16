@@ -4,15 +4,15 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 
 
-export default function RsvpPage () {
+export default function ListePage () {
     return (
       <>
         <Layout>
             <Head>
-                <title>RSVP Mariage de Delphine & Etienne</title>
+                <title>Liste de Mariage de Delphine & Etienne</title>
             </Head>
             <div className="page-frame">
-                <div className="page-bg bg-rsvpCover text-white">
+                <div className="page-bg bg-listCover text-white">
                     <Header/>
                     <div className="page-cover-buffer"/>
                     <div className="page-content-bg p-20">

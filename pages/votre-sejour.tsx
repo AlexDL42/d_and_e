@@ -10,7 +10,7 @@ export default function RsvpPage () {
     <>
       <Layout>
         <Head>
-          <title>About Your Stay</title>
+          <title>Votre Séjour</title>
         </Head>
         <div className="page-frame">
           <div className="page-bg bg-aysCover text-black">

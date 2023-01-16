@@ -9,7 +9,7 @@ export default function PlanningPage () {
       <>
         <Layout>
             <Head>
-                <title>Mariage de Delphine & Etienne - Formentera, 2023</title>
+                <title>Le programme</title>
             </Head>
             <div className="page-frame">
                 <div className="page-bg bg-planningCover text-black">

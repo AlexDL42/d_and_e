@@ -20,11 +20,11 @@
     @apply bg-no-repeat bg-cover bg-center bg-fixed h-full m-0
 }
 .page-content-title {
-    @apply flex justify-center font-bold text-black pt-32 pb-20 text-xl md:text-2xl lg:text-4xl font-bold text-center md:text-left
+    @apply flex justify-center font-bold font-cedarvilleCursive text-xl text-black pt-32 pb-20 md:text-2xl lg:text-6xl text-center
 }
 
 .page-content-bg {
-    @apply w-screen bg-slate-300 bg-opacity-75
+    @apply w-full bg-slate-300 bg-opacity-75
 }
 .page-cover-buffer {
     @apply flex justify-center font-bold text-black pt-64 pb-20 text-xl md:text-2xl lg:text-4xl font-bold text-center md:text-left
@@ -38,7 +38,7 @@
 }
 
 .img-post-card {
-    @apply h-64 w-80 object-cover
+    @apply h-80 w-80 object-cover
 }
 
 .banner-txt-intro {
@@ -52,7 +52,7 @@
 }
 
 .banner-btn {
-    @apply font-bold py-2 w-full;
+    @apply font-bold py-2 w-full text-6xl;
 }
 .banner-btn-pink {
     @apply bg-rose-600 text-white;
