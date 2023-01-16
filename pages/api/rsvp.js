@@ -23,7 +23,7 @@ export default async (req, res) => {
                 `
     outHtml += "<ul>"
     Object.keys(events).forEach((k) => {
-        outHtml += `<li>${k}: ${events[k]['confirmed']}, +${events[k]['nbPlus']}</li>`
+        outHtml += `<li>${events[k]['title']}: ${events[k]['confirmed']}, +${events[k]['nbPlus']}</li>`
   
     })
 

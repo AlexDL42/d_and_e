@@ -7,7 +7,15 @@ export function Example() {
 
     const [finished, setFinished] = useState(false)
     const [tel, setTel] = useState("")
-    const [events, setEvents] = useState({...posts})
+    const [events, setEvents] = useState(() => {
+        let obj = {}
+        posts.map((post, i) => {
+            obj[post.id] = {
+                ...post
+            }
+        })
+        return obj 
+    })
 
     const handleChangeEvent = (e, props) => {
         e.preventDefault()
@@ -31,18 +39,6 @@ export function Example() {
         const lastName = event.target[1].value
         const phone = tel.replaceAll(' ','')
         const email = event.target[3].value
-
-        const confirmDinerSP = event.target[4].checked
-        const nbPlusDinerSP = event.target[5].value
-
-        const confirmBrunch = event.target[6].checked
-        const nbPlusBrunch = event.target[7].value
-
-        const confirmCerem = event.target[8].checked
-        const nbPlusCerem = event.target[9].value
-
-        const confirmTeuf = event.target[10].checked
-        const nbPlusTeuf = event.target[11].value
         
         const word = event.target[12].value
 
