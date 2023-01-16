@@ -3,33 +3,28 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import {posts} from '../public/assets/events';
 
-export function Example() {
-
+function Example() {
     const [finished, setFinished] = useState(false)
     const [tel, setTel] = useState("")
     const [events, setEvents] = useState(() => {
         let obj = {}
         posts.map((post, i) => {
             obj[post.id] = {
-                ...post
+                ...post,
+                'confirmed': false,
+                'nbPlus': 0,
             }
         })
         return obj 
     })
 
     const handleChangeEvent = (e, props) => {
-        e.preventDefault()
+        e.persist()
         setEvents(() => {
-            let out = {
-                ...events,
-                [props.id]:{
-                    [props.changeP]: props.status,
-                    ...events[props.id]
-                }
-            }
+            let out = {...events}            
+            out[props.id][props.changeP] = props.status
             return out
-        }
-        )
+        })
     }
 
     const handleSubmit = async (event) => {
@@ -62,6 +57,10 @@ export function Example() {
 
         setFinished(true)
     }
+
+
+    
+    console.log(events)
 
     return (
         <>
@@ -108,23 +107,25 @@ export function Example() {
                 </div>
 
                 <div className="grid grid-cols-2 pb-10">
-                    {posts.map((post, i) => {
+                    {Object.keys(events).map((k) => {
+                        const event = events[k]
 
                         return (
                             <>
                                 <div className="flex flex-row justify-center items-center py-4 border-b-2 border-black border-opacity-50">
-                                    <label className="mx-4 text-sm font-bold text-gray-900 dark:text-white">{post.title}</label>
+                                    <label className="mx-4 text-sm font-bold text-gray-900 dark:text-white">{event.title}</label>
                                     <input type="checkBox"
                                         className="mx-2 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        onChange={(e) => {return handleChangeEvent(e, {'id': post.id, 'changeP': 'confirmed', 'status': e.target.checked})}}
+                                        onChange={(e) => {return handleChangeEvent(e, {'id': k, 'changeP': 'confirmed', 'status': e.target.checked})}}
+                                        defaultChecked={event['confirmed']}
                                     />
                                 </div>
                                 <div className="flex flex-row justify-center items-center py-4 border-b-2 border-black border-opacity-50">
                                     <label className="min-w-auto mx-4 text-sm font-bold text-gray-900 dark:text-white">+ ?</label>
                                     <input type="number" 
                                         className="mx-2 w-12 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        defaultValue={0}
-                                        onChange={(e) => {return handleChangeEvent(e, {'id': post.id, 'changeP': 'nbPlus', 'status': e.target.value})}}
+                                        onChange={(e) => {return handleChangeEvent(e, {'id': k, 'changeP': 'nbPlus', 'status': e.target.value})}}
+                                        value={event['nbPlus']}
                                         required/>
                                 </div>
                             </>
@@ -148,7 +149,7 @@ export function Example() {
         </>
     
     )
-  }
+}
 
 
 export default function RsvpForm () {

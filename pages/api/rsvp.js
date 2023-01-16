@@ -36,7 +36,7 @@ export default async (req, res) => {
   try {
     await transporter.sendMail({
       from: email,
-      to: "adl42.pro@gmail.com",
+      to: "adl42.pro@gmail.com, a.delfosselegat@gmail.com",
       subject: `Mariage D&E - RSVP ${firstName} ${lastName}`,
       html: `${buildHtml()}`
     });
