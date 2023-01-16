@@ -1,18 +1,17 @@
 import nodemailer from "nodemailer";
 
 export default async (req, res) => {
-    console.log('33')
   const { firstName, lastName, phone, email, events } = req.body;
 
-  console.log('a')
   const transporter = nodemailer.createTransport({
-    host: "gmail.com",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASSWORD,
     }
   });
-  console.log('v')
 
   const buildHtml = ()  => {
     let evtHtml = `<p>${firstName} ${lastName} submitted an RSVP:</p><br>
@@ -22,18 +21,15 @@ export default async (req, res) => {
                 `
     evtHtml += "<ul>"
     Object.keys(events).forEach((k) => {
-      console.log(k)
       evtHtml += `<li>${k}: ${events[k]['confirm']}, +${events[k]['nbPlus']}</li>`
   
     })
     evtHtml += '</ul>'
 
-    console.log(evtHtml)
     return evtHtml
   }
  
 
-  console.log('c')
   try {
     await transporter.sendMail({
       from: email,
@@ -41,9 +37,7 @@ export default async (req, res) => {
       subject: `Mariage D&E - RSVP ${firstName} ${lastName}`,
       html: `${buildHtml()}`
     });
-    console.log('g')
   } catch (error) {
-    console.log(error)
     return res.status(500).json({ error: error.message || error.toString() });
   }
   return res.status(200).json({ error: "" });
