@@ -64,7 +64,7 @@ export function Example() {
             body: JSON.stringify(out),
         })
 
-        // setFinished(true)
+        setFinished(true)
     }
 
     return (
