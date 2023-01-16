@@ -34,11 +34,11 @@ const Header = () => {
         <LinkCustom href="/liste">
           Contributer
         </LinkCustom>
-        <button className="btn btn-pink max-h-14 flex items-center m-4">
-          <Link href="/rsvp">
+        <Link href="/rsvp">
+          <button className="btn btn-pink max-h-14 flex items-center m-4">
             RSVP
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </div>
   )
