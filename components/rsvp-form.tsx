@@ -1,34 +1,18 @@
+import React, { useState } from 'react'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 
-
-import React, { useState, useEffect } from 'react'
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-
-const evtTest = ['a', 'v', 'g']
 export function Example() {
 
     const [finished, setFinished] = useState(false)
 
-
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
 
         const firstName = event.target[0].value
         const lastName = event.target[1].value
-        const phone = event.target[2].value
+        let phone = event.target[2].value.replaceAll(' ','')
         const email = event.target[3].value
 
         const confirmDinerSP = event.target[4].checked
@@ -43,23 +27,54 @@ export function Example() {
         const confirmTeuf = event.target[10].checked
         const nbPlusTeuf = event.target[11].value
 
-        console.log(firstName, lastName, phone, email)
+        const out = {
+            firstName,
+            lastName,
+            phone,
+            email,
+            'events':{
+                'dinerSP': {
+                    'confirm': confirmDinerSP,
+                    'nbPlus': nbPlusDinerSP,
+                },
+                'brunchEC': {
+                    'confirm': confirmBrunch,
+                    'nbPlus': nbPlusBrunch,
+                },
+                'cerem': {
+                    'confirm': confirmCerem,
+                    'nbPlus': nbPlusCerem,
+                },
+                'teuf': {
+                    'confirm': confirmTeuf,
+                    'nbPlus': nbPlusTeuf,
+                },
+            },
+        }
+        console.log(out)
+        
 
-        console.log(confirmDinerSP, nbPlusDinerSP)
-        console.log(confirmBrunch, nbPlusBrunch)
-        console.log(confirmCerem, nbPlusCerem)
-        console.log(confirmDinerSP, nbPlusDinerSP)
-        console.log(confirmTeuf, nbPlusTeuf)
+
+        const res = await fetch(`api/contact`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(out),
+        })
+
         // setFinished(true)
     }
 
     return (
-        <>{finished ? 
-            <div className="banner-btn text-center banner-btn-pink-no-h">
-                Thank you for your response!
-            </div>
-        :
-        <div className="bg-white bg-opacity-75 border-black rounded-lg border-2 border-opacity-50 p-20">
+        <>
+        <div className="bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 p-20">
+            {finished ? 
+                <div className="banner-btn text-center banner-btn-pink-no-h">
+                    Thank you for your response!
+                </div>
+            : <>
+            
             <div className="banner-btn text-center banner-btn-pink-no-h">
                 RSVP
             </div>
@@ -76,7 +91,9 @@ export function Example() {
                     </div>
                     <div>
                         <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Numéro de téléphone</label>
-                        <input type="tel" id="phone" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="+33 6 12 34 56 78"/>
+                        <PhoneInput
+                            country={'fr'}
+                        />
                     </div>
                     <div className="mb-6">
                         <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Adresse Email</label>
@@ -127,9 +144,9 @@ export function Example() {
                 <div className="w-full flex">
                     <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full px-5 my-4 py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
                 </div>
-            </form>
+            </form></>}
         </div>
-        }</>
+        </>
     
     )
   }

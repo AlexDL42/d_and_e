@@ -50,16 +50,13 @@ const posts = [
   
 
 const clFuncI = (i) => {
-let out = ""
-if(i % 2==0){
-
-    //The number is even
+  if(i % 2==0){
+      return "post-card"
     }
     else {
-    
-    out += "-reverse"
+      return "post-card-reverse"
     }
-    return "flex flex-row" + out + " overflow-hidden rounded-lg shadow-lg"
+      
 }
 
 
@@ -75,7 +72,7 @@ export default function AboutYourStayContent() {
                 return (
                   <div key={post.title} className={clName}>
                   <div className="flex-shrink-0 relative">
-                      <img className="h-60 w-80 object-cover" src={post.imageUrl} alt="" />
+                      <img className="img-post-card" src={post.imageUrl} alt="" />
                   </div>
                   <div className="flex flex-1 flex-col items-between bg-white p-6">
                       <div className="flex-1 flex-col justify-between">

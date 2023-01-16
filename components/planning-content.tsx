@@ -122,9 +122,9 @@ export default function PlanningContent() {
             <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-1">
             {posts.map((post, i) => {
                 return (
-                    <div key={post.title} className="flex flex-row overflow-hidden rounded-lg shadow-lg">
+                    <div key={post.title} className="post-card">
                         <div className="flex-shrink-0 relative">
-                            <img className="h-48 w-96 object-cover" src={post.imageUrl} alt="" />
+                            <img className="img-post-card" src={post.imageUrl} alt="" />
                             <div className="bg-white border-b-2 border-l-2 border-black border-opacity-50 p-2 absolute top-0 right-0 w-20 font-bold flex text-center">{formatDateShort(post.startDate)}</div>
                         </div>
                         <div className="flex flex-1 flex-col justify-between bg-white p-6">

@@ -10,6 +10,37 @@
 
 
 
+
+
+
+.page-frame {
+    @apply h-full w-full m-0
+}
+.page-bg {
+    @apply bg-no-repeat bg-cover bg-center bg-fixed h-full m-0
+}
+.page-content-title {
+    @apply flex justify-center font-bold text-black pt-32 pb-20 text-xl md:text-2xl lg:text-4xl font-bold text-center md:text-left
+}
+
+.page-content-bg {
+    @apply w-screen bg-slate-300 bg-opacity-75
+}
+.page-cover-buffer {
+    @apply flex justify-center font-bold text-black pt-64 pb-20 text-xl md:text-2xl lg:text-4xl font-bold text-center md:text-left
+}
+.post-card {
+    @apply flex overflow-hidden rounded-lg shadow-lg m-10 flex-row
+}
+
+.post-card-reverse {
+    @apply flex overflow-hidden rounded-lg shadow-lg m-10 flex-row-reverse
+}
+
+.img-post-card {
+    @apply h-64 w-80 object-cover
+}
+
 .banner-txt-intro {
     @apply font-bold py-2 w-full text-lg;
 }

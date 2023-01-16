@@ -8,17 +8,21 @@ export default function RsvpPage () {
     return (
       <>
         <Layout>
-          <Head>
-            <title>Mariage de Delphine & Etienne - Formentera, 2023</title>
-          </Head>
-          <div className="h-full w-full m-0">
-            <div className="text-black bg-homeCover bg-no-repeat bg-cover bg-center bg-fixed h-full m-0">
-              <Header/>
-              <div className="p-20">
-                <RsvpForm/>
-              </div>
+            <Head>
+                <title>Mariage de Delphine & Etienne - Formentera, 2023</title>
+            </Head>
+            <div className="page-frame">
+                <div className="page-bg bg-rsvpCover text-white">
+                    <Header/>
+                    <div className="page-cover-buffer"/>
+                    <div className="page-content-bg p-20">
+                        {/* <div className="page-content-title">
+                            Nous sommes impatients de partager ce moment avec vous!
+                        </div> */}
+                        <RsvpForm/>
+                    </div>   
+                </div>
             </div>
-          </div>
         </Layout>
       </>
     )
