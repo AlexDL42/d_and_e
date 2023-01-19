@@ -17,7 +17,8 @@ export default async (req, res) => {
     let outHtml = `<p><strong>Someone submitted an RSVP!</strong></p><br>
                     <ul>
                         <li><strong>First name: </strong> ${firstName}</li>
-                        <li><strong>Last name: </strong> ${lastName}</li>
+                        <li><strong>Last name: </strong> ${phone}</li>
+                        <li><strong>Phone number: </strong> ${lastName}</li>
                         <li><strong>Email: </strong> ${email}</li>
                         <li><strong>Events Attendance: </strong> ${firstName}</li>
                 `

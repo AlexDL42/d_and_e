@@ -47,7 +47,7 @@ function Example() {
         }        
 
 
-        const res = await fetch(`api/rsvp`, {
+        const res = await fetch('api/mailer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
