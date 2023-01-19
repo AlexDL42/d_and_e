@@ -67,7 +67,7 @@ function Example() {
         <div className="bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 p-20">
             {finished ? 
                 <div className="banner-btn text-center banner-btn-pink-no-h">
-                    Thank you for your response!
+                    Merci pour votre réponse!
                 </div>
             : <>
             

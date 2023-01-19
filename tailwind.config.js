@@ -14,7 +14,6 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        'hero': "url('../public/assets/blog/preview/cover.jpg')",
         'homeCover': "url('https://iloveformentera.com/wp-content/uploads/2017/08/CalaSaona-1024x680.jpg')",
         'aysCover': "url('https://www.ibizagocar.com/wp-content/uploads/2016/08/how-to-go-from-ibiza-to-formentera-ibizagocar-2-1024x614.jpg')",
         'planningCover': "url('https://rare-gallery.com/mocahbig/466717-boat-vehicle-water-sea-aerial-view-sailboats-top-view.jpg')",
