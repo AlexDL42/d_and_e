@@ -1,9 +1,7 @@
+import {mailTo, buildHtmlRSVP} from '../../lib/utils.ts';
 import nodemailer from "nodemailer";
 
-export default async (req, res) => {
-  const { firstName, lastName, phone, email, events, word } = req.body;
-
-  const transporter = nodemailer.createTransport({
+export const mailTransporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
@@ -11,35 +9,36 @@ export default async (req, res) => {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASSWORD,
     }
-  });
+});
+export default async (req, res) => {
 
-  const buildHtml = ()  => {
-    let outHtml = `<p><strong>Someone submitted an RSVP!</strong></p><br>
-                    <ul>
-                        <li><strong>First name: </strong> ${firstName}</li>
-                        <li><strong>Last name: </strong> ${lastName}</li>
-                        <li><strong>Phone number: </strong> ${phone}</li>
-                        <li><strong>Email: </strong> ${email}</li>
-                        <li><strong>Events Attendance: </strong></li>
-                `
-    outHtml += "<ul>"
-    Object.keys(events).forEach((k) => {
-        outHtml += `<li>${events[k]['title']}: ${events[k]['confirmed']}, +${events[k]['nbPlus']}</li>`
-  
-    })
+  const {mailType} = req.body
 
-    if (word) {
-        outHtml += `</ul></ul><br><p><strong>Cette personne vous a laissé un petit mot: </strong></p><p style='margin-left: 40px'>${word}</p>`
-    }
-    return outHtml
+  let mailSubject = 'Mariage D&E - '
+  let outHtml = ''
+
+  switch(mailType) {
+    case 'rsvp':
+      const { firstName, lastName, phone, email, events, word } = req.body;
+      mailSubject += `RSVP ${firstName} ${lastName}`;
+      outHtml += buildHtmlRSVP({ firstName, lastName, phone, email, events, word });
+
+    case 'music':
+      const { song } = req.body;
+      mailSubject += `Music Suggestion`;
+      outHtml += `<p><strong>Quelqu'un vous suggère une chanson!</strong></p><p style='margin-left: 40px'>${song}</p>`
+
+    default:
+      mailSubject += `Unknown mail type: ${mailType}`;
+      outHtml += `<p>Unknown email type sent: ${mailType}, please contact dev team.`
   }
 
   try {
-    await transporter.sendMail({
-      from: email,
-      to: "adl42.pro@gmail.com, a.delfosselegat@gmail.com",
-      subject: `Mariage D&E - RSVP ${firstName} ${lastName}`,
-      html: `${buildHtml()}`
+    await mailTransporter.sendMail({
+      from: process.env.SMTP_USER,
+      to: `${mailTo}`,
+      subject: `${mailSubject}`,
+      html: `${outHtml}`
     });
   } catch (error) {
     return res.status(500).json({ error: error.message || error.toString() });

@@ -38,6 +38,7 @@ function Example() {
         const word = event.target[12].value
 
         const out = {
+            'mailType': 'rsvp',
             firstName,
             lastName,
             phone,
