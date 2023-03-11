@@ -10,28 +10,33 @@ export const mailTransporter = nodemailer.createTransport({
       pass: process.env.SMTP_PASSWORD,
     }
 });
+
+
 export default async (req, res) => {
 
-  const {mailType} = req.body
-
+  let { mailType } = req.body
+  mailType = String(mailType)
   let mailSubject = 'Mariage D&E - '
   let outHtml = ''
 
-  switch(mailType) {
+  switch(String(mailType)) {
     case 'rsvp':
       const { firstName, lastName, phone, email, events, word } = req.body;
       mailSubject += `RSVP ${firstName} ${lastName}`;
       outHtml += buildHtmlRSVP({ firstName, lastName, phone, email, events, word });
+      break
 
     case 'music':
       const { song } = req.body;
       mailSubject += `Music Suggestion`;
       outHtml += `<p><strong>Quelqu'un vous suggère une chanson!</strong></p><p style='margin-left: 40px'>${song}</p>`
+      break
 
     default:
       mailSubject += `Unknown mail type: ${mailType}`;
       outHtml += `<p>Unknown email type sent: ${mailType}, please contact dev team.`
   }
+
 
   try {
     await mailTransporter.sendMail({

@@ -59,10 +59,6 @@ function Example() {
         setFinished(true)
     }
 
-
-    
-    console.log(events)
-
     return (
         <>
         <div className="bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 p-20">
@@ -80,25 +76,51 @@ function Example() {
                 <div className="grid gap-6 my-6 md:grid-cols-2">
                     <div>
                         <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Prénom</label>
-                        <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required/>
+                        <input
+                            type="text"
+                            id="first_name"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="John"
+                            required
+                        />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Nom</label>
-                        <input type="text" id="last_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required/>
+                        <input
+                            type="text"
+                            id="last_name"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Doe"
+                            required
+                        />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Numéro de téléphone</label>
                         <div className="text-gray-900 text-sm p-2.5">
                             <PhoneInput
+                                placeholder={"33612345678"}
+
                                 country={'fr'}
-                                value={tel}
+                                // value={tel ? tel : undefined}
                                 onChange={newPhone => setTel(newPhone)}
+                                enableSearch={true}
+                                inputProps={{
+                                    name: 'phone',
+                                    required: true,
+                                    autoFocus: true
+                                }}
                             />
                         </div>
                     </div>
                     <div className="mb-6">
                         <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Adresse Email</label>
-                        <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required/>
+                        <input
+                            type="email"
+                            id="email"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="john.doe@company.com"
+                            required
+                        />
                     </div>
                 </div>
                 
@@ -127,7 +149,9 @@ function Example() {
                                         className="mx-2 w-14 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         onChange={(e) => {return handleChangeEvent(e, {'id': k, 'changeP': 'nbPlus', 'status': e.target.value})}}
                                         value={event['nbPlus']}
-                                        required/>
+                                        disabled={!event['confirmed']}
+                                        required
+                                    />
                                 </div>
                             </>
 
@@ -139,11 +163,21 @@ function Example() {
                     <div className="w-full my-4 text-gray-900">
                         Un petit mot?
                     </div>
-                    <input type="text" id="word" className=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="..." required/>
+                    <input
+                        type="text"
+                        id="word"
+                        className=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="..."
+                    />
 
                 </div>
                 <div className="w-full flex mt-20">
-                    <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full px-5 my-4 py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
+                    <button
+                        type="submit"
+                        className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full px-5 my-4 py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    >
+                        Envoyer
+                    </button>
                 </div>
             </form></>}
         </div>

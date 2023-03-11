@@ -1,24 +1,29 @@
 
 import Link from 'next/link'
 
+const catchA = `Vous êtes invités à célébrer le mariage de`
+const catchB = `Delphine & Etienne`
+const catchC = `A Formentera`
+const catchD = `8-10 Septembre 2023`
+
 const RsvpHome = () => {
 
   return (
-    <div className="w-full h-full flex flex-col justify-space items-center">
+    <div className="rh-container">
 
-        <div className="banner-txt-intro text-center mt-10">
-          Titi et Toto Taylor ainsi que IndividuA and IndividuB Hollingworth vous invite cordialement au mariage de
+        <div className="rh-intro">
+          {catchA}
         </div>
 
-        <div className="banner-txt-title text-center my-10">
-          Delphine & Etienne
+        <div className="rh-title">
+        {catchB}
         </div>
 
-        <div className="banner-txt-subtitle text-center mb-10">
-          1-7 Septembre 2023 · Formentera, Spain
+        <div className="rh-subtitle">
+          {`${catchC} · ${catchD}`}
         </div>
 
-        <Link href='/rsvp' className="banner-btn banner-btn-pink text-center">
+        <Link href='/rsvp' className="rh-button">
           RSVP
         </Link>
 

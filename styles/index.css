@@ -11,10 +11,142 @@
 
 
 
+/* PlanningContent */
+
+.pc-container-0 {
+    @apply relative bg-opacity-0 px-6 pt-10 pb-20 lg:px-8 lg:pt-10 lg:pb-28
+}
+
+.pc-container-1 {
+    @apply relative mx-auto max-w-7xl
+}
+
+.pc-container-2 {
+    @apply  mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-1
+}
+/* .pc-container-1 {
+    @apply 
+}
+.pc-container-1 {
+    @apply 
+} */
+
+  /* RsvpHome */
+.rh-container {
+    @apply w-full h-full flex flex-col items-center
+}
+
+.rh-intro {
+    @apply banner-txt-intro text-center mt-10
+}
+
+.rh-title {
+    @apply banner-txt-title text-center my-10
+}
+
+.rh-subtitle {
+    @apply banner-txt-subtitle text-center mb-10
+}
+
+.rh-button {
+    @apply banner-btn banner-btn-pink text-center
+}
+
+  /* WeddingListContent */
+  .wlc-container-0 {
+    @apply bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 p-20
+  }
+
+  .wlc-container-1 {
+    @apply banner-btn text-center banner-btn-pink-no-h
+  }
+
+  .wlc-container-2 {
+    @apply text-black text-center m-10 text-xl font-bold
+  }
+/* Layout */
+
+.layout-container {
+    @apply h-screen w-full
+}
+  /* HomeContent */
+.hc-container-0 {
+    @apply relative bg-opacity-0 px-6 pt-10 pb-20 lg:px-8 lg:pt-10 lg:pb-28
+}
+
+.hc-container-1 {
+    @apply relative mx-20 max-w-7xl
+}
+
+.hc-container-2 {
+    @apply  mx-auto mt-12 grid max-w-lg gap-12 lg:max-w-none lg:grid-cols-1
+}
 
 
-.page-frame {
+/* Header */
+.header-container {
+    @apply min-w-full flex flex-row flex-wrap justify-between items-center pb-[25vh] mb-[25vh] px-12;
+    background-image: linear-gradient(#1122da, transparent);
+}
+
+.header-home-container {
+    @apply text-2xl md:text-4xl
+}
+
+.header-nav-container {
+    @apply flex flex-row justify-between items-center md:text-xl
+}
+
+.header-button {
+    @apply btn btn-pink max-h-14 flex items-center m-4
+}
+
+.header-custom-link {
+    @apply  link-underline   m-4 text-white
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 2px;
+    background-position: left 0 bottom -1px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline:hover {
+    background-size: 100% 2px;
+    background-position: left 0 bottom -1px
+}
+/* AboutYourStayContent */
+.aysc-container-0 {
+    @apply relative bg-opacity-0 px-6 pt-10 pb-20 lg:px-8 lg:pt-10 lg:pb-28
+}
+.aysc-container-1 {
+    @apply relative mx-20 max-w-7xl
+}
+.aysc-container-2 {
+    @apply mx-auto mt-12 grid max-w-lg gap-12 lg:max-w-none lg:grid-cols-1
+}
+/* .aysc- {
     @apply h-full w-full m-0
+}
+.aysc- {
+    @apply h-full w-full m-0
+}
+.aysc- {
+    @apply h-full w-full m-0
+}
+.aysc- {
+    @apply h-full w-full m-0
+} */
+
+
+
+/* [To Sort] */
+.page-frame {
+    @apply h-full w-full m-0 overflow-x-hidden
 }
 .page-bg {
     @apply bg-no-repeat bg-cover bg-center bg-fixed h-full m-0
@@ -29,16 +161,20 @@
 .page-cover-buffer {
     @apply flex justify-center font-bold text-black pt-64 pb-20 text-xl md:text-2xl lg:text-4xl font-bold text-center md:text-left
 }
+
+.post-card-base {
+    @apply flex rounded-lg overflow-hidden shadow-lg md:m-10 flex-col motion-safe:animate-fadeIn
+}
 .post-card {
-    @apply flex overflow-hidden rounded-lg shadow-lg m-10 flex-row
+    @apply post-card-base md:flex-row
 }
 
 .post-card-reverse {
-    @apply flex overflow-hidden rounded-lg shadow-lg m-10 flex-row-reverse
+    @apply post-card-base md:flex-row-reverse
 }
 
 .img-post-card {
-    @apply h-80 w-80 object-cover
+    @apply h-full w-full max-w-[40vw] object-cover
 }
 
 .banner-txt-intro {
@@ -55,7 +191,7 @@
     @apply font-bold py-2 w-full text-6xl;
 }
 .banner-btn-pink {
-    @apply bg-rose-600 text-white;
+    @apply bg-rose-600 text-white  transition-colors duration-500;
 }
 .banner-btn-pink-no-h {
     @apply bg-rose-600 text-white;
@@ -65,10 +201,10 @@
 }
 
 .btn {
-    @apply font-bold py-2 px-4 rounded-full;
+    @apply font-bold py-1 px-5 rounded-full;
 }
 .btn-pink {
-    @apply bg-rose-600 text-white border-2 border-white;
+    @apply bg-rose-600 text-white border-2 border-white  transition-colors duration-500;
 }
 .btn-pink-no-h {
     @apply bg-rose-600 text-white border-2 border-white;

@@ -8,7 +8,7 @@ type Props = {
 
 const Alert = ({ preview }: Props) => {
   
-  const dateEvt = new Date(2023, 2, 15, 18, 0, 0, 0);
+  const dateEvt = new Date(2023, 9, 9, 18, 0, 0, 0);
 
   const [alertStr, setAlertStr] = useState(() => {
     const out = buildStrTimeLeft({'dateEnd':dateEvt, 'msgEnd': "And... It's on!", 'precision': 'd'})
@@ -24,6 +24,10 @@ const Alert = ({ preview }: Props) => {
     return () => clearTimeout(timer);
   }, [alertStr]);
 
+  const displayDate = (dtObj) => {
+    const strOut = `${dtObj.getDate()} ${dtObj.getMonth()}`
+    return strOut
+  }
   return (
     <div
       className={cn('border-b', {
@@ -33,7 +37,10 @@ const Alert = ({ preview }: Props) => {
     >
       <div>
         <div className="py-2 text-center text-lg">
-            {alertStr}             
+          <div className="flex flex-row justify-around">
+            <span>{`Rendez-vous le 9 Septembre 2023!`}</span>
+            <strong>{alertStr}</strong>             
+          </div>
         </div>
       </div>
     </div>

@@ -14,9 +14,11 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        'homeCover': "url('https://iloveformentera.com/wp-content/uploads/2017/08/CalaSaona-1024x680.jpg')",
+        'homeCover': "url('https://i.ibb.co/q7SRTdf/d-and-e-img-1.jpg')",
+        'homeCoverOld': "url('https://iloveformentera.com/wp-content/uploads/2017/08/CalaSaona-1024x680.jpg')",
         'aysCover': "url('https://www.ibizagocar.com/wp-content/uploads/2016/08/how-to-go-from-ibiza-to-formentera-ibizagocar-2-1024x614.jpg')",
-        'planningCover': "url('https://rare-gallery.com/mocahbig/466717-boat-vehicle-water-sea-aerial-view-sailboats-top-view.jpg')",
+        'planningCover': "url('https://i.ibb.co/b2CZpQr/d-and-e-img-0.jpg')",
+        'planningCoverOld': "url('https://rare-gallery.com/mocahbig/466717-boat-vehicle-water-sea-aerial-view-sailboats-top-view.jpg')",
         'rsvpCover': "url('http://ibizaglobal.tv//wp-content/uploads/2017/05/night-market-las-dalias-ibiza-welcometoibiza-1.jpg')",
         'listCover': "url('https://apis.xogrp.com/media-api/images/72cf2f36-ba5a-4bb4-804c-90156ec0a36f')",
       },
@@ -49,9 +51,21 @@ module.exports = {
         sm: '0 5px 10px rgba(0, 0, 0, 0.12)',
         md: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
+      animation: {
+        fadeIn: "fadeIn 2s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+      }
     },
   },
   plugins: [
     require('@tailwindcss/forms'),
   ],
+  variants: {
+    animation: ["motion-safe"]
+}
 }

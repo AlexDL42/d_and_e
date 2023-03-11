@@ -99,7 +99,7 @@ export const buildStrTimeLeft = ({dateEnd, msgEnd, precision='d', labels=['J', '
   
       let out = ""
       if (diffInDays>0) {
-        out = `${labels[0]} -${Number(diffInDays)}`
+        out = `${labels[0]} - ${Number(diffInDays)}`
       }
   
       switch (precision) {

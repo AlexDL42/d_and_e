@@ -9,7 +9,7 @@ type Props = {
 
 const Layout = ({ preview, children }: Props) => {
   return (
-    <div className="h-screen w-full">
+    <div className="layout-container">
       <Meta />
       <div>
         <Alert preview={preview} />
