@@ -12,7 +12,7 @@ export default function Index() {
     <>
       <Layout>
           <Head>
-              <title>Mariage de Delphine & Etienne - Formentera, 2023</title>
+              <title>Mariageer de Delphine & Etienne - Formentera, 2023</title>
           </Head>
           <div className="page-frame">
               <div className="page-bg bg-homeCover text-black">
