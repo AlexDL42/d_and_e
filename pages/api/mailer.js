@@ -21,9 +21,9 @@ export default async (req, res) => {
 
   switch(String(mailType)) {
     case 'rsvp':
-      const { firstName, lastName, phone, email, events, word } = req.body;
+      const { firstName, lastName, phone, email, addressF, addressP, dStart, events, word } = req.body;
       mailSubject += `RSVP ${firstName} ${lastName}`;
-      outHtml += buildHtmlRSVP({ firstName, lastName, phone, email, events, word });
+      outHtml += buildHtmlRSVP({ firstName, lastName, phone, email, addressF, addressP, dStart, events, word });
       break
 
     case 'music':

@@ -30,11 +30,17 @@ function Example() {
     const handleSubmit = async (event) => {
         event.preventDefault()
 
+        console.log('test evt')
+        console.log(event)
+
         const firstName = event.target[0].value
         const lastName = event.target[1].value
         const phone = tel.replaceAll(' ','')
         const email = event.target[3].value
-        
+        const addressF = event.target[4].value
+        const addressP = event.target[5].value
+        const dStart = event.target[6].value
+
         const word = event.target[12].value
 
         const out = {
@@ -43,6 +49,9 @@ function Example() {
             lastName,
             phone,
             email,
+            addressF,
+            addressP,
+            dStart,
             events,
             word,
         }        
@@ -143,6 +152,18 @@ function Example() {
                             id="adresse-postale"
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder=""
+                            required
+                        />
+                    </div>
+
+                    <div className="mb-6">
+                        <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Date d'Arrivée à Formentera</label>
+                        <input
+                            type="date"
+                            id="jour-arrivee"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            min="2023-09-01"
+                            max="2023-09-09"
                             required
                         />
                     </div>

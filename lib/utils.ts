@@ -1,13 +1,18 @@
 // -------------------------------------------------------------------------------------
 export const mailTo = "adl42.pro@gmail.com, a.delfosselegat@gmail.com";
 
-export const buildHtmlRSVP = ({ firstName, lastName, phone, email, events, word})  => {
+export const buildHtmlRSVP = ({ firstName, lastName, phone, email, addressF, addressP, dStart, events, word})  => {
     let outHtml = `<p><strong>Someone submitted an RSVP!</strong></p><br>
                     <ul>
                         <li><strong>First name: </strong> ${firstName}</li>
                         <li><strong>Last name: </strong> ${lastName}</li>
                         <li><strong>Phone number: </strong> ${phone}</li>
                         <li><strong>Email: </strong> ${email}</li>
+                        <li><strong>Email: </strong> ${email}</li>
+                        <li><strong>Adresse à Formentera: </strong> ${addressF}</li>
+                        <li><strong>Adresse Postale: </strong> ${addressP}</li>
+                        <li><strong>Date d'arrivée à Formentera: </strong> ${dStart}</li>
+
                         <li><strong>Events Attendance: </strong></li>
                 `
     outHtml += "<ul>"

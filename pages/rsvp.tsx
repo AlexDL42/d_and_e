@@ -16,9 +16,6 @@ export default function RsvpPage () {
                     <Header/>
                     <div className="page-cover-buffer"/>
                     <div className="page-content-bg p-20">
-                        {/* <div className="page-content-title">
-                            Nous sommes impatients de partager ce moment avec vous!
-                        </div> */}
                         <RsvpForm/>
                     </div>   
                 </div>
