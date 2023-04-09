@@ -41,7 +41,7 @@ function Example() {
         const addressP = event.target[5].value
         const dStart = event.target[6].value
 
-        const word = event.target[12].value
+        const word = event.target[15].value
 
         const out = {
             'mailType': 'rsvp',

@@ -8,7 +8,6 @@ export const buildHtmlRSVP = ({ firstName, lastName, phone, email, addressF, add
                         <li><strong>Last name: </strong> ${lastName}</li>
                         <li><strong>Phone number: </strong> ${phone}</li>
                         <li><strong>Email: </strong> ${email}</li>
-                        <li><strong>Email: </strong> ${email}</li>
                         <li><strong>Adresse à Formentera: </strong> ${addressF}</li>
                         <li><strong>Adresse Postale: </strong> ${addressP}</li>
                         <li><strong>Date d'arrivée à Formentera: </strong> ${dStart}</li>
