@@ -29,8 +29,13 @@ const Header = () => {
         <LinkCustom href="/votre-sejour">
           Votre Sejour
         </LinkCustom>
-        <LinkCustom href="/liste">
+
+        {/* <LinkCustom href="/liste">
           Contributer
+        </LinkCustom> */}
+
+        <LinkCustom href="/informations-utiles">
+          Info Utiles
         </LinkCustom>
         <Link href="/rsvp">
           <button className="header-button">

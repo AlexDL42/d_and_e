@@ -8,14 +8,14 @@ import cn from 'classnames'
 
 const ContentCard = (props) => {
     console.log(props)
-  const { post, flip, toCal, learnMore, ...extra } = props
+  const { post, flip, toCal, learnMore, fullH, ...extra } = props
 
-  console.log(post)
 
   return (
     <div key={post.title} className= {cn('', {
         'post-card': !flip,
         'post-card-reverse': flip,
+        'post-card-fullH': fullH,
       })}>
         <div className="flex-shrink-0 relative">
             <img className="img-post-card" src={post.imageUrl} alt="" />
@@ -43,7 +43,7 @@ const ContentCard = (props) => {
                     }
                     
                 </div>
-                <p className="mt-3 text-base text-gray-500">{post.description}</p>
+                {post.description}
 
                 {learnMore ? 
                     <div className="py-4 flex-0 text-base text-gray-500 absolute bottom-0">

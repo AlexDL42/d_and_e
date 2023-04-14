@@ -165,16 +165,29 @@
 .post-card-base {
     @apply flex rounded-lg overflow-hidden shadow-lg md:m-10 flex-col motion-safe:animate-fadeIn
 }
+
+.post-card-zero {
+    @apply flex post-card-base max-h-[300px]
+}
+
+.iu-card {
+    @apply post-card-base  md:flex-col-reverse max-h-[full]
+}
+
 .post-card {
-    @apply post-card-base md:flex-row
+    @apply post-card-zero md:flex-row
 }
 
 .post-card-reverse {
-    @apply post-card-base md:flex-row-reverse
+    @apply post-card-zero md:flex-row-reverse
 }
 
 .img-post-card {
     @apply h-full w-full max-w-[40vw] object-cover
+}
+
+.img-iu-card {
+    @apply h-full w-full  bg-white object-cover p-5
 }
 
 .banner-txt-intro {

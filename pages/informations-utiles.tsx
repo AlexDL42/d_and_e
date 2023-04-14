@@ -1,15 +1,8 @@
-import PlanningContent from '../components/planning-content'
+import InfoUtilesContent from '../components/infoutiles-content'
 import Header from '../components/header'
 import Layout from '../components/layout'
 import Head from 'next/head'
 
-
-
-const mapsLinks = {
-    'restaurants': 'https://i.ibb.co/ngTY1rW/formen-map-2.png',
-    'main': 'https://i.ibb.co/gt7Cbsx/formen-map-0.png',
-    'details': 'https://i.ibb.co/FXkFHT6/formen-map-1-w-legend.png'
-}
 export default function PlanningPage () {
     return (
       <>
@@ -25,7 +18,7 @@ export default function PlanningPage () {
                         <div className="page-content-title">
                             Nous sommes impatients de partager ce moment avec vous!
                         </div>
-                        <PlanningContent/>
+                        <InfoUtilesContent/>
                     </div>   
                 </div>
             </div>
