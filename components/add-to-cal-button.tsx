@@ -1,9 +1,7 @@
-import { useEffect } from 'react';
-import { atcb_init } from 'add-to-calendar-button';
-import 'add-to-calendar-button/assets/css/atcb.css';
+
+import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 export const AddToCal = (props: any) => {
-    useEffect( () => { atcb_init() }, []);
 
     const jsonAddToCal = {
         "name": props.v.post.title,
@@ -23,11 +21,12 @@ export const AddToCal = (props: any) => {
             "Yahoo"
         ],
         "timeZone":"Europe/Madrid",
-        "iCalFileName":"Reminder-Event"
+        "iCalFileName":"Reminder-Event",
+        "hideTextLabelButton": true
     }
     return (
-        <div className='atcb' style={{display: 'none'}}>
-            {JSON.stringify({...jsonAddToCal, 'label': props.v.label})}
-        </div>
+        <AddToCalendarButton
+            {...jsonAddToCal}
+        ></AddToCalendarButton>
     )
 }

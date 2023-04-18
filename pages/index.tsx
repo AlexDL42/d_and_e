@@ -20,7 +20,7 @@ export default function Index() {
                   <div className="page-content-bg">
                       <RsvpHome/>
 
-                      <HomeContent/>
+                      {/* <HomeContent/> */}
 
                   </div>   
               </div>

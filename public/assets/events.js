@@ -4,7 +4,8 @@ export const posts = [
       id: '0',
       description:
         <div>
-          Venez partager un apéro espagnol sur la falaise près de la Cala pour admirer le coucher de soleil et rencontrer vos partenaires de fête pour le weekend.\n Lieu: perdu dans la nature ! Il n'est pas simple de s'y rendre, le mieux étant d'utiliser les références GPS (38°42'17.7"N 1°23'22.1"E) ou Google Map.
+          <div className="p-6">Venez partager un apéro espagnol sur la falaise près de la Cala pour admirer le coucher de soleil et rencontrer vos partenaires de fête pour le weekend.</div>
+          <div className="p-6">Lieu: perdu dans la nature ! Il n'est pas simple de s'y rendre, le mieux étant d'utiliser les références GPS (38°42'17.7"N 1°23'22.1"E) ou <a className="a-classic" href="https://www.google.com/maps/place/38%C2%B042'17.7%22N+1%C2%B023'22.1%22E/@38.704909,1.3872883,17z/data=!3m1!4b1!4m4!3m3!8m2!3d38.704909!4d1.389477?hl=fr-FR">Google Maps</a>.</div>
         </div>,
       startDate: '2023-09-08',
       startTime: '19:00',
@@ -19,9 +20,10 @@ export const posts = [
       title: 'Cérémonie Laïque',
       id: '1',
       description:
-      <div>
-        Nos témoins et nos familles ont organisé une cérémonie laïque pour partager notre histoire et notre union devant tous ceux qui nous sont chers - si tout va bien, on se dira OUI!\nElle se déroulera au même endroit que le dîner de la veille et des navettes viendront vous chercher à votre domicile, n’oubliez pas de répondre au RSVP pour nous communiquer l’adresse de votre logement à Formentera!
-      </div>,
+        <div>
+          <div className="p-6">Nos témoins et nos familles ont organisé une cérémonie laïque pour partager notre histoire et notre union devant tous ceux qui nous sont chers - si tout va bien, on se dira <strong>OUI!</strong></div>
+          <div className="p-6">Elle se déroulera <strong>au même endroit que le dîner de la veille</strong> et des navettes viendront vous chercher à votre domicile, <strong>n’oubliez pas de répondre au RSVP</strong> pour nous communiquer l’adresse de votre logement à Formentera! </div>
+        </div>,
       startDate: '2023-09-09',
       startTime: '17:30',
       endDate: '2023-09-09',
@@ -35,10 +37,11 @@ export const posts = [
       title: 'Cocktail et Soirée',
       id: '2',
       description:
-      <div>
-        On passe aux choses sérieuses ! Après une petite pause photos sur la falaise, les navettes vous amèneront à la casa Mahana ou se dérouleront cocktail et soirée jusqu’au petit matin. Les navettes seront également disponibles au cours de la nuit pour vous ramener chez vous. Il y a aussi un certains nombre de taxis sur l’île disponibles toute la nuit, vous pouvez les joindre au +34 971 32 23 42. 
-        Dress code : chic et décontracté, pas de talons aiguilles, pas de doudoune ! Le thème de Formentera c’est “Hippie chic”, vous en faites ce que vous voulez …
-      </div>,
+        <div>
+          <div className="p-6">On passe aux choses sérieuses ! Après une petite pause photos sur la falaise, les navettes vous amèneront à la <strong>Casa Mahana</strong> ou se dérouleront cocktail et soirée jusqu’au petit matin. </div>
+          <div className="p-6">Les navettes seront également disponibles au cours de la nuit pour vous ramener chez vous. Il y a aussi un certains nombre de taxis sur l’île disponibles toute la nuit, vous pouvez les joindre au <strong>+34 971 32 23 42</strong>.</div>
+          <div className="p-6"><strong>Dress code:</strong> chic et décontracté, pas de talons aiguilles, pas de doudoune ! Le thème de Formentera c’est “Hippie chic”, vous en faites ce que vous voulez…</div>
+        </div>,
       startDate: '2023-09-09',
       startTime: '19:00',
       endDate: '2023-09-09',
@@ -53,10 +56,9 @@ export const posts = [
       id: '3',
       description:
       <div>
-        Après une grosse fiesta, rien de mieux que d’alterner entre paella, sangria, baignade et sieste sur la plage ! 
-      Rejoignez-nous au Pelayo, une institution locale pour passer l’aprem farniente avec nous et nous remettre de nos émotions. Le chemin pour s’y rendre n'est pas le plus simple, mais le restaurant est facilement trouvable sur <a href='https://goo.gl/maps/NbPR879sU4avqrHy7'>Google Map</a>.
-      
-      Dress code : maillot de bain
+        <div className="p-6">Après une grosse fiesta, rien de mieux que d’alterner entre paella, sangria, baignade et sieste sur la plage !</div>
+        <div className="p-6">Rejoignez-nous au <strong>Pelayo</strong>, une institution locale pour passer l’aprem farniente avec nous et nous remettre de nos émotions. Le chemin pour s’y rendre n'est pas le plus simple, mais le restaurant est facilement trouvable sur <a className="a-classic" href='https://goo.gl/maps/NbPR879sU4avqrHy7'>Google Maps</a>. </div>
+        <div className="p-6"><strong>Dress code:</strong> maillot de bain!</div>
       </div>,
       startDate: '2023-09-10',
       startTime: '12:30',

@@ -37,7 +37,7 @@
 
   /* RsvpHome */
 .rh-container {
-    @apply w-full h-full flex flex-col items-center
+    @apply w-full h-full flex flex-col items-center p-[20vh]
 }
 
 .rh-intro {
@@ -170,11 +170,11 @@
 }
 
 .post-card-base {
-    @apply flex rounded-lg overflow-hidden shadow-lg md:m-10 flex-col motion-safe:animate-fadeIn
+    @apply flex rounded-lg  shadow-lg md:m-10 flex-col motion-safe:animate-fadeIn
 }
 
 .post-card-zero {
-    @apply flex post-card-base max-h-[300px]
+    @apply flex post-card-base
 }
 
 .maps-card {
@@ -182,15 +182,15 @@
 }
 
 .post-card {
-    @apply post-card-zero md:flex-row
+    @apply post-card-zero 
 }
 
 .post-card-reverse {
-    @apply post-card-zero md:flex-row-reverse
+    @apply post-card-zero
 }
 
 .img-post-card {
-    @apply h-full w-full max-w-[40vw] object-cover
+    @apply h-full w-full max-h-[40vh] object-cover
 }
 
 .img-maps-card {
@@ -224,7 +224,7 @@
     @apply font-bold py-1 px-5 rounded-full;
 }
 .btn-pink {
-    @apply bg-rose-600 text-white border-2 border-white  transition-colors duration-500;
+    @apply bg-rose-600 text-white border-2 border-white p-2 rounded-full transition-colors duration-500;
 }
 .btn-pink-no-h {
     @apply bg-rose-600 text-white border-2 border-white;

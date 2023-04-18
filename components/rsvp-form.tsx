@@ -30,9 +30,6 @@ function Example() {
     const handleSubmit = async (event) => {
         event.preventDefault()
 
-        console.log('test evt')
-        console.log(event)
-
         const firstName = event.target[0].value
         const lastName = event.target[1].value
         const phone = tel.replaceAll(' ','')
