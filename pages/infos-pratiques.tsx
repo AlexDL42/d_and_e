@@ -1,9 +1,10 @@
-import InfoUtilesContent from '../components/infoutiles-content'
+import MapsContent from '../components/maps-content'
 import Header from '../components/header'
 import Layout from '../components/layout'
 import Head from 'next/head'
+import Link from 'next/link'
 
-export default function PlanningPage () {
+export default function Page () {
     return (
       <>
         <Layout>
@@ -18,7 +19,11 @@ export default function PlanningPage () {
                         <div className="page-content-title">
                             Nous sommes impatients de partager ce moment avec vous!
                         </div>
-                        <InfoUtilesContent/>
+
+
+                        <Link href="/cartes">
+                            Cartes
+                        </Link>
                     </div>   
                 </div>
             </div>

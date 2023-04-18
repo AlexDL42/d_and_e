@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const catchA = `Vous êtes invités à célébrer le mariage de`
 const catchB = `Delphine & Etienne`
-const catchC = `A Formentera`
+const catchC = `Formentera`
 const catchD = `8-10 Septembre 2023`
 
 const RsvpHome = () => {

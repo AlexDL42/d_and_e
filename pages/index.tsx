@@ -5,7 +5,7 @@ import Head from 'next/head'
 import HomeContent from '../components/home-content'
 
 
-const catchP = `Nous sommes impatients de partager ce moment avec vous !`
+// const catchP = `Nous sommes impatients de partager ce moment avec vous !`
 
 export default function Index() {
   return (
@@ -18,9 +18,6 @@ export default function Index() {
               <div className="page-bg bg-homeCover text-black">
                   <Header/>
                   <div className="page-content-bg">
-                      <div className="page-content-title">
-                          {catchP}
-                      </div>
                       <RsvpHome/>
 
                       <HomeContent/>

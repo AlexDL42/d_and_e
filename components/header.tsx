@@ -34,8 +34,8 @@ const Header = () => {
           Contributer
         </LinkCustom> */}
 
-        <LinkCustom href="/informations-utiles">
-          Info Utiles
+        <LinkCustom href="/infos-pratiques">
+          Infos Pratiques
         </LinkCustom>
         <Link href="/rsvp">
           <button className="header-button">
