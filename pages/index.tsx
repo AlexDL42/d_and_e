@@ -17,6 +17,7 @@ export default function Index() {
           <div className="page-frame">
               <div className="page-bg bg-homeCover text-black">
                   <Header/>
+                  <div className="page-cover-buffer"/>
                   <div className="page-content-bg">
                       <RsvpHome/>
 
