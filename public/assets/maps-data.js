@@ -1,4 +1,4 @@
-export const posts = [
+export const maps = [
     {
       title: `Zones Principales de l'île`,
       id: '0',

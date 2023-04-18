@@ -9,7 +9,11 @@
   }
 
 
-
+/* Default CSS Values */
+a:link, a:visited {
+    text-decoration: underline;
+    cursor: auto;
+  }
 
 /* PlanningContent */
 

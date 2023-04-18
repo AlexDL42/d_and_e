@@ -1,8 +1,7 @@
-import MapsContent from '../components/maps-content'
 import Header from '../components/header'
 import Layout from '../components/layout'
 import Head from 'next/head'
-import Link from 'next/link'
+import InfosPratiquesContent from '../components/infos-pratiques-content'
 
 export default function Page () {
     return (
@@ -20,10 +19,7 @@ export default function Page () {
                             Nous sommes impatients de partager ce moment avec vous!
                         </div>
 
-
-                        <Link href="/cartes">
-                            Cartes
-                        </Link>
+                        <InfosPratiquesContent />
                     </div>   
                 </div>
             </div>
