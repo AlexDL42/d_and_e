@@ -162,6 +162,7 @@ function AddressesContent() {
     <CenteredAccordion title='Adresses' items={addresses} />
   )
 }
+
 function ComeContent() {
     const steps = [
         {
@@ -172,7 +173,7 @@ function ComeContent() {
         },
         {
             title:  <div>
-                        <span className="text-base font-semibold leading-7">2. Prendre un Taxi jusqu’au port d’ibiza </span>
+                        <span className="text-base font-semibold leading-7">2. Prendre un Taxi jusqu’au port d’ibiza: </span>
                         <span className="text-base leading-7 ml-4 text-gray-600">
                             Demander <strong>« la barca para formentera »</strong> au chauffeur
                         </span>
@@ -184,7 +185,7 @@ function ComeContent() {
             elem: <ul>
                     <li className="text-base leading-7 ml-4 text-gray-600">
                         Plusieurs compagnies de bateaux proposent le trajet d'Ibiza à Formentera tout au long de la journée. Tous ces itinéraires sont mis à jour quotidiennement sur le site de Proximo Ferry (<a href='https://www.proximoferry.com/'>https://www.proximoferry.com/</a>).
-                    </li>
+                    </li> <br/>
                     <li className="text-base leading-7 ml-4 text-gray-600">
                         Nous vous recommandons de ne pas réserver vos billets à l'avance, sauf pour ceux qui arrivent dans la soirée. Vous pouvez vous présenter au port d'Ibiza ou de Formentera et acheter votre billet directement à la billetterie. Si vous arrivez juste à temps, vous pouvez toujours acheter les billets directement sur le bateau. Il n'y a pas de différence de prix. Les ferries partent environ toutes les 30 minutes.
                     </li>
@@ -199,19 +200,10 @@ function ComeContent() {
 function TransportsContent() {
     const rents = [
         {
-            title: <span className="text-base font-semibold leading-7">
-                    
-                    </span>,
-            elem: null
-        },
-        {
             title: <span className="text-base font-semibold leading-7">Louer une voiture/un scooter</span>,
             elem: <ul>
                     <li className="text-base leading-7 ml-4 text-gray-600">
                         Avoir une voiture pour se déplacer sur l'île est fortement recommandé. Pour louer une voiture, rendez-vous sur le port de Formentera. Nous vous communiquerons un code de réductions à présenter au loueur
-                    </li>
-                    <li className="text-base leading-7 ml-4 text-gray-600">
-                        Nous vous recommandons de ne pas réserver vos billets à l'avance, sauf pour ceux qui arrivent dans la soirée. Vous pouvez vous présenter au port d'Ibiza ou de Formentera et acheter votre billet directement à la billetterie. Si vous arrivez juste à temps, vous pouvez toujours acheter les billets directement sur le bateau. Il n'y a pas de différence de prix. Les ferries partent environ toutes les 30 minutes.
                     </li>
                 </ul>
         },
@@ -231,20 +223,33 @@ function TransportsContent() {
   )
 }
 
-
 function HotelsContent() {
     const hotels = [
         {
             title: <span className="text-base font-semibold leading-7">
-                    Si vous n’avez pas encore trouvé votre logement, voici quelques suggestions : 
-Hostal La Savina (La Savina) 
-Hostal Pepe (San Ferran) 
-Hotel Cala Saona (Cala Saona) 
-Apartamentos Castavi (Es Pujols) 
-Apartamentos La Gaviota (Es Caló) 
-Apartamentos Talaya (Ca Marí) 
+                    Si vous n’avez pas encore trouvé votre logement, voici quelques suggestions :
                     </span>,
-            elem: null
+            elem: <ul>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                        Hostal La Savina (La Savina) 
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                        Hostal Pepe (San Ferran) 
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                        Hotel Cala Saona (Cala Saona) 
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                        Apartamentos Castavi (Es Pujols) 
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                        Apartamentos La Gaviota (Es Caló)
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                        Apartamentos Talaya (Ca Marí) 
+                        </li>
+
+                    </ul>
         },
     ]
   return (
@@ -258,14 +263,14 @@ function WhatToDoContent() {
     const wtd = [
         {
             title: <span className="text-base font-semibold leading-7">
-                    Sports nautiques
+                    Sports Nautiques
                     </span>,
             elem: <ul>
                         <li className="text-base leading-7 ml-4 text-gray-600">
-                        Wet 4 Fun - Wet4Fun - Watersports Formentera
+                            <strong>Wet 4 Fun:</strong> <a href="https://www.wet4fun.com/">Wet4Fun - Watersports Formentera</a>
                         </li>
                         <li className="text-base leading-7 ml-4 text-gray-600">
-                        Plongée : Formentera Divers - https://www.formenteradivers.com/
+                        : Formentera Divers - https://www.formenteradivers.com/
 
                             <strong>Google Map: </strong>
                             <a href="https://maps.app.goo.gl/1FFrYdvF6GSTAxwU7?g_st=ic">
@@ -274,31 +279,67 @@ function WhatToDoContent() {
 
                         </li>
 
-                        <li className="text-base leading-7 ml-4 text-gray-600">
-                        Massage : Marta 653 77 59 13 // Adriana 616 66 46 31                        </li>
-                        <li className="text-base leading-7 ml-4 text-gray-600">
-                        Randonnée : nous vous conseillons la randonnée du chemin romain « Camino Romano » au départ d’Es Calo et qui monte jusqu’à la Mola.                        </li>
-                        <li className="text-base leading-7 ml-4 text-gray-600">
-                        Dégustation de vin : si vous souhaitez gouter au vin local, le vignoble Terramoll organise des dégustations de vin au milieu des vignes et visite du domaine. Le domaine se trouve à la Mola, au sommet de la montagne ! http://www.terramoll.es/                        </li>
-
-
-                        <li className="text-base leading-7 ml-4 text-gray-600">
-                        Manger 
-Petit déjeuner : le petit déjeuner à Es Caló est une institution et la vue est magnifique
-Diner: Restaurant Casbah, Can Carlito, Cafuné
-Coucher de Soleil : El Molin de Sal, Cala Saona (petite bicoque en hauteur sur la gauche de la plage, attention prendre du cash) 
-                        </li>
-
                 </ul>
         },
-
         {
             title: <span className="text-base font-semibold leading-7">
-                    Lieu de la soirée
+                    Plongée 
                     </span>,
             elem: <ul>
                         <li className="text-base leading-7 ml-4 text-gray-600">
-                            <strong>Casa Mahana: </strong>800 Venda de Porto Saler, 07860 San Francesc Javier
+                            <strong>Formentera Divers: </strong> <a href="https://www.formenteradivers.com/">https://www.formenteradivers.com/</a>
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                            <strong>Adriana: </strong> 616 66 46 31
+                        </li>
+                </ul>
+        },
+        {
+            title: <span className="text-base font-semibold leading-7">
+                    Massages
+                    </span>,
+            elem: <ul>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                            <strong>Marta: </strong> 653 77 59 13
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                            <strong>Adriana: </strong> 616 66 46 31
+                        </li>
+                </ul>
+        },
+        {
+            title: <span className="text-base font-semibold leading-7">
+                    Randonnée 
+                    </span>,
+            elem: <ul>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                        Nous vous conseillons la randonnée du chemin romain « Camino Romano » au départ d’Es Calo et qui monte jusqu’à la Mola. 
+                        </li>
+                </ul>
+        },
+        {
+            title: <span className="text-base font-semibold leading-7">
+                    Dégustation de vin
+                    </span>,
+            elem: <ul>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                            Si vous souhaitez gouter au vin local, le vignoble <strong>Terramoll</strong> organise des dégustations de vin au milieu des vignes et visite du domaine. Le domaine se trouve à la Mola, au sommet de la montagne ! <a href="http://www.terramoll.es/">http://www.terramoll.es/</a>
+                        </li>
+                </ul>
+        },
+        {
+            title: <span className="text-base font-semibold leading-7">
+                    Où Manger
+                    </span>,
+            elem: <ul>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                            <strong>Petit déjeuner: </strong> le petit déjeuner à Es Caló est une institution et la vue y est magnifique!
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                            <strong>Diner: </strong> Restaurants Casbah, Can Carlito, Cafuné
+                        </li>
+                        <li className="text-base leading-7 ml-4 text-gray-600">
+                            <strong>Coucher de Soleil: </strong> El Molin de Sal, Cala Saona (petite bicoque en hauteur sur la gauche de la plage, paiement uniquement en liquide) 
                         </li>
                 </ul>
         },
