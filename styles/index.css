@@ -10,7 +10,7 @@
 
 
 /* Default CSS Values */
-a:link, a:visited {
+.a-classic {
     text-decoration: underline;
     cursor: auto;
   }
@@ -18,7 +18,7 @@ a:link, a:visited {
 /* PlanningContent */
 
 .pc-container-0 {
-    @apply relative bg-opacity-0 px-6 pt-10 pb-20 lg:px-8 lg:pt-10 lg:pb-28
+    @apply relative bg-opacity-0 px-6 pt-10 pb-32 lg:px-8 lg:pt-10 lg:pb-28
 }
 
 .pc-container-1 {
@@ -157,6 +157,9 @@ a:link, a:visited {
 }
 .page-content-title {
     @apply flex justify-center font-bold font-cedarvilleCursive text-xl text-black pt-32 pb-20 md:text-2xl lg:text-6xl text-center
+}
+.page-content-title-b {
+    @apply flex justify-center font-bold font-cedarvilleCursive text-xl text-black pt-20 pb-20 md:text-2xl lg:text-6xl text-center
 }
 
 .page-content-bg {

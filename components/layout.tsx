@@ -5,9 +5,10 @@ import Meta from './meta'
 type Props = {
   preview?: boolean
   children: React.ReactNode
+  nocatchfoot?: boolean
 }
 
-const Layout = ({ preview, children }: Props) => {
+const Layout = ({ preview, children, nocatchfoot }: Props) => {
   return (
     <div className="layout-container">
       <Meta />
@@ -15,7 +16,7 @@ const Layout = ({ preview, children }: Props) => {
         <Alert preview={preview} />
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer nocatch={nocatchfoot}/>
     </div>
   )
 }

@@ -26,9 +26,9 @@ const Header = () => {
         <LinkCustom href="/planning">
           Planning
         </LinkCustom>
-        <LinkCustom href="/votre-sejour">
+        {/* <LinkCustom href="/votre-sejour">
           Votre Sejour
-        </LinkCustom>
+        </LinkCustom> */}
 
         {/* <LinkCustom href="/liste">
           Contributer

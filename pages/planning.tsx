@@ -7,7 +7,7 @@ import Head from 'next/head'
 export default function PlanningPage () {
     return (
       <>
-        <Layout>
+        <Layout nocatchfoot={true}>
             <Head>
                 <title>Le programme</title>
             </Head>
@@ -16,10 +16,11 @@ export default function PlanningPage () {
                     <Header/>
                     <div className="page-cover-buffer"/>
                     <div className="page-content-bg">
-                        <div className="page-content-title">
-                            Nous sommes impatients de partager ce moment avec vous!
-                        </div>
                         <PlanningContent/>
+
+                        <div className="page-content-title">
+                            With Love
+                        </div>
                     </div>   
                 </div>
             </div>
