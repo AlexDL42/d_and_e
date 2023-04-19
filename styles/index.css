@@ -98,7 +98,7 @@
 }
 
 .header-nav-container {
-    @apply flex flex-row justify-between items-center md:text-xl
+    @apply flex flex-col md:flex-row justify-between items-center md:text-xl
 }
 
 .header-button {
