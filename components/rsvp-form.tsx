@@ -112,8 +112,7 @@ function Example() {
                                 enableSearch={true}
                                 inputProps={{
                                     name: 'phone',
-                                    required: true,
-                                    autoFocus: true
+                                    required: true
                                 }}
                             />
                         </div>

@@ -15,6 +15,7 @@ export default function PlanningPage () {
             <div className="page-bg bg-planningCover text-black">
                     <Header/>
                     <div className="page-cover-buffer"/>
+                    <div id="anchor_one" />
                     <div className="page-content-bg">
                         <div className="page-content-title">
                         Nous sommes impatients de partager ce moment avec vous!

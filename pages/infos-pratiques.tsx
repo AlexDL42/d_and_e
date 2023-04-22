@@ -14,10 +14,12 @@ export default function Page () {
                 <div className="page-bg bg-planningCover text-black">
                     <Header/>
                     <div className="page-cover-buffer"/>
+                    <div id="anchor_one" />
                     <div className="page-content-bg">
-                    <InfosPratiquesContent />
-                        
-
+                      <InfosPratiquesContent />
+                      <div className=" banner-txt-title text-center my-5">
+                        See you soon
+                      </div>
                     </div>   
                 </div>
             </div>

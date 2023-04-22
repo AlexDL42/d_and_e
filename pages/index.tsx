@@ -20,10 +20,11 @@ export default function Index() {
                   <div className="page-cover-buffer"/>
                   <div className="page-content-bg">
                       <RsvpHome/>
-
                       {/* <HomeContent/> */}
-
                   </div>   
+                  <div className="page-content-bg banner-txt-title text-center my-5">
+                    See you soon
+                  </div>
               </div>
           </div>
       </Layout>

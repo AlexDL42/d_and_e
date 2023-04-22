@@ -15,6 +15,7 @@ export default function RsvpPage () {
                 <div className="page-bg bg-rsvpCover text-white">
                     <Header/>
                     <div className="page-cover-buffer"/>
+                    <div id="anchor_one" />
                     <div className="page-content-bg p-20">
                         <RsvpForm/>
                     </div>   

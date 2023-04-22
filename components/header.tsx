@@ -23,22 +23,22 @@ const Header = () => {
 
       <div className="header-nav-container">
 
-        <LinkCustom href="/planning">
+        <LinkCustom href="/planning/#anchor_one">
           Planning
         </LinkCustom>
         {/* <LinkCustom href="/votre-sejour">
           Votre Sejour
         </LinkCustom> */}
 
-        <LinkCustom href="/infos-pratiques">
+        <LinkCustom href="/infos-pratiques/#anchor_one">
           Infos Pratiques
         </LinkCustom>
 
-        <LinkCustom href="/liste">
+        <LinkCustom href="/liste/#anchor_one">
           Liste de Mariage
         </LinkCustom>
 
-        <Link href="/rsvp">
+        <Link href="/rsvp/#anchor_one">
           <button className="header-button">
             RSVP
           </button>
