@@ -166,7 +166,7 @@ function Example() {
                     </div>
                 </div>
                 
-                <div className="w-full mb-4 text-gray-900">
+                <div className="w-full mb-4 text-sm font-bold text-gray-900">
                     Votre participation aux festivités:
                 </div>
 
@@ -201,7 +201,7 @@ function Example() {
                 </div>
 
                 <div className="my-8">
-                    <div className="w-full my-4 text-gray-900">
+                    <div className="w-full my-4 text-sm font-bold text-gray-900">
                         Un petit mot?
                     </div>
                     <input

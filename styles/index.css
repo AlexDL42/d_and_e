@@ -48,7 +48,7 @@
 }
 
 .rh-title {
-    @apply banner-txt-title text-center my-10 text-8xl
+    @apply banner-txt-title-big text-center my-10
 }
 
 .rh-subtitle {
@@ -61,7 +61,7 @@
 
   /* WeddingListContent */
   .wlc-container-0 {
-    @apply bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 p-20
+    @apply bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 m-20 p-20
   }
 
   .wlc-container-1 {
@@ -204,8 +204,13 @@
     @apply font-bold font-cedarvilleCursive py-2 w-full text-5xl;
 }
 .banner-txt-title {
+    @apply font-bold py-2 w-full text-4xl font-cedarvilleCursive;
+}
+
+.banner-txt-title-big {
     @apply font-bold py-2 w-full text-8xl font-cedarvilleCursive;
 }
+
 .banner-txt-subtitle {
     @apply font-bold font-cedarvilleCursive py-2 w-full text-4xl;
 }

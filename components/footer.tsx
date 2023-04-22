@@ -4,11 +4,11 @@ const Footer = ({nocatch}) => {
       <div>
         <div className="flex flex-col items-center">
           {nocatch ? null : 
-          <div className="banner-txt-title text-center my-10">
+          <div className="banner-txt-title text-center my-5">
             See you soon
           </div>
           }
-          <div className="w-full text-center py-10 border-t border-slate-200 ">
+          <div className="w-full text-center py-2 border-t border-slate-200 text-xs">
             <a
               href={`/`}
               className="hover:underline"
