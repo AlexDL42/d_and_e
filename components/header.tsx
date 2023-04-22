@@ -30,13 +30,14 @@ const Header = () => {
           Votre Sejour
         </LinkCustom> */}
 
-        {/* <LinkCustom href="/liste">
-          Contributer
-        </LinkCustom> */}
-
         <LinkCustom href="/infos-pratiques">
           Infos Pratiques
         </LinkCustom>
+
+        <LinkCustom href="/liste">
+          Liste de Mariage
+        </LinkCustom>
+
         <Link href="/rsvp">
           <button className="header-button">
             RSVP

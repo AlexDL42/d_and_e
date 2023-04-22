@@ -361,11 +361,11 @@ export default function InfosPratiquesContent() {
         <div className="pc-container-1">
 
             <div className="pc-container-2">
-                <MapsContent />
                 <ContactsContent />
                 <AddressesContent />
                 <ComeContent />
                 <TransportsContent />
+                <MapsContent />
                 <HotelsContent />
                 <WhatToDoContent />
             </div>

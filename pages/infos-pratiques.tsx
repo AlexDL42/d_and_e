@@ -15,11 +15,9 @@ export default function Page () {
                     <Header/>
                     <div className="page-cover-buffer"/>
                     <div className="page-content-bg">
-                        <div className="page-content-title">
-                            Nous sommes impatients de partager ce moment avec vous!
-                        </div>
+                    <InfosPratiquesContent />
+                        
 
-                        <InfosPratiquesContent />
                     </div>   
                 </div>
             </div>

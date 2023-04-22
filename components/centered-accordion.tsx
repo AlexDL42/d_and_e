@@ -3,10 +3,10 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 export default function CenteredAccordion({title, items}) {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+    <div className="bg-gray-200">
+      <div className="mx-auto max-w-7xl px-6 py-12 sm:py-12 lg:px-8 lg:py-12">
         <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
-          <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">{title}</h2>
+          <h2 className="text-2xl font-bold leading-10 tracking-tight text-green-800">{title}</h2>
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
             {items.map((item) => (
               <Disclosure as="div" key={item.title} className="pt-6">

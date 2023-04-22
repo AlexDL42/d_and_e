@@ -106,21 +106,28 @@ export const buildStrTimeLeft = ({dateEnd, msgEnd, precision='d', labels=['J', '
         out = `${labels[0]} - ${Number(diffInDays)}`
       }
   
-      switch (precision) {
-        case 'd':
-            return out
-        case 'h':
-            out +=  `, ${pad(diffInHours, 2)} ${labels[1]}`
-            return out
-        case 'm':
-            out +=  `, ${pad(diffInMin, 2)} ${labels[2]}`
-            return out
-        case 's':
-            out +=  `, ${pad(diffInSec, 2)} ${labels[3]}`
-            return out
-        default:
-            out +=  `, ${pad(diffInSec, 2)} ${labels[3]}`
-            return out
+      if (precision == 'd') {
+        return out
       }
+
+      out += `, ${pad(diffInHours, 2)} ${labels[1]}`
+
+      if (precision == 'h') {
+        return out
+      }
+
+      out += `, ${pad(diffInMin, 2)} ${labels[2]}`
+
+      if (precision == 'm') {
+        return out
+      }
+
+      out += `, ${pad(diffInSec, 2)} ${labels[3]}`
+
+      if (precision == 's') {
+        return out
+      }
+      
+      return `Error in buildStrTimeLeft: precision '${precision}' unknown.`
     }
   }

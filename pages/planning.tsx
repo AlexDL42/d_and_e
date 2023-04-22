@@ -12,15 +12,14 @@ export default function PlanningPage () {
                 <title>Le programme</title>
             </Head>
             <div className="page-frame">
-                <div className="page-bg bg-planningCover text-black">
+            <div className="page-bg bg-planningCover text-black">
                     <Header/>
                     <div className="page-cover-buffer"/>
                     <div className="page-content-bg">
-                        <PlanningContent/>
-
                         <div className="page-content-title">
-                            With Love
+                        Nous sommes impatients de partager ce moment avec vous!
                         </div>
+                        <PlanningContent/>
                     </div>   
                 </div>
             </div>

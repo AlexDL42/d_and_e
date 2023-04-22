@@ -8,6 +8,9 @@
     }
   }
 
+ 
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 
 /* Default CSS Values */
 .a-classic {
@@ -45,7 +48,7 @@
 }
 
 .rh-title {
-    @apply banner-txt-title text-center my-10
+    @apply banner-txt-title text-center my-10 text-8xl
 }
 
 .rh-subtitle {
@@ -156,7 +159,7 @@
     @apply bg-no-repeat bg-cover bg-center bg-fixed h-full m-0
 }
 .page-content-title {
-    @apply flex justify-center font-bold font-cedarvilleCursive text-xl text-black pt-32 pb-20 md:text-2xl lg:text-6xl text-center
+    @apply flex justify-center font-bold font-cedarvilleCursive text-xl text-black pt-10 pb-0 md:text-2xl lg:text-6xl text-center
 }
 .page-content-title-b {
     @apply flex justify-center font-bold font-cedarvilleCursive text-xl text-black pt-20 pb-20 md:text-2xl lg:text-6xl text-center
@@ -190,7 +193,7 @@
 }
 
 .img-post-card {
-    @apply h-full w-full max-h-[40vh] object-cover
+    @apply h-full w-full h-[800px] object-cover
 }
 
 .img-maps-card {
@@ -198,37 +201,37 @@
 }
 
 .banner-txt-intro {
-    @apply font-bold py-2 w-full text-2xl;
+    @apply font-bold font-cedarvilleCursive py-2 w-full text-5xl;
 }
 .banner-txt-title {
     @apply font-bold py-2 w-full text-8xl font-cedarvilleCursive;
 }
 .banner-txt-subtitle {
-    @apply font-bold py-2 w-full text-2xl;
+    @apply font-bold font-cedarvilleCursive py-2 w-full text-4xl;
 }
 
 .banner-btn {
-    @apply font-bold py-2 w-full text-6xl;
+    @apply font-bold py-3 w-40 text-3xl rounded-full;
 }
 .banner-btn-pink {
-    @apply bg-rose-600 text-white  transition-colors duration-500;
+    @apply bg-green-800 text-white  transition-colors duration-500;
 }
 .banner-btn-pink-no-h {
-    @apply bg-rose-600 text-white;
+    @apply bg-green-800 text-white;
 }
 .banner-btn-pink:hover {
-    @apply bg-white text-rose-600;
+    @apply bg-white text-green-800;
 }
 
 .btn {
     @apply font-bold py-1 px-5 rounded-full;
 }
 .btn-pink {
-    @apply bg-rose-600 text-white border-2 border-white p-2 rounded-full transition-colors duration-500;
+    @apply bg-green-800 text-white border-2 border-white p-2 rounded-full transition-colors duration-500;
 }
 .btn-pink-no-h {
-    @apply bg-rose-600 text-white border-2 border-white;
+    @apply bg-green-800 text-white border-2 border-white;
 }
 .btn-pink:hover {
-    @apply bg-white text-rose-600 border-2 border-rose-600;
+    @apply bg-white text-green-800 border-2 border-green-800;
 }
