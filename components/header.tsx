@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className="header-home-container">
-        <LinkCustom href="/">
+        <LinkCustom href="/#anchor_one">
           Home
         </LinkCustom>
       </div>

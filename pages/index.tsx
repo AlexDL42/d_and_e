@@ -18,6 +18,7 @@ export default function Index() {
               <div className="page-bg bg-homeCover text-black">
                   <Header/>
                   <div className="page-cover-buffer"/>
+                  <div id="anchor_one" />
                   <div className="page-content-bg">
                       <RsvpHome/>
                       {/* <HomeContent/> */}
