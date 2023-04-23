@@ -201,14 +201,14 @@
 }
 
 .banner-txt-intro {
-    @apply font-bold font-cedarvilleCursive py-2 w-full text-5xl;
+    @apply font-bold font-cedarvilleCursive py-2 w-full text-4xl lg:text-6xl;
 }
 .banner-txt-title {
     @apply font-bold py-2 w-full text-4xl font-cedarvilleCursive;
 }
 
 .banner-txt-title-big {
-    @apply font-bold py-2 w-full text-8xl font-cedarvilleCursive;
+    @apply font-bold py-2 w-full text-6xl lg:text-8xl font-cedarvilleCursive;
 }
 
 .banner-txt-subtitle {
