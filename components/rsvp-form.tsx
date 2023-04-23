@@ -67,7 +67,7 @@ function Example() {
 
     return (
         <>
-        <div className="bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 p-2">
+        <div className="bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 p-2 md:p-20">
             {finished ? 
                 <div className="banner-btn text-center banner-btn-pink-no-h">
                     Merci pour votre réponse!
@@ -85,7 +85,7 @@ function Example() {
                         <input
                             type="text"
                             id="first_name"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit md:w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
                             placeholder="John"
                             required
                         />
@@ -95,17 +95,18 @@ function Example() {
                         <input
                             type="text"
                             id="last_name"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit md:w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
                             placeholder="Doe"
                             required
                         />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm font-bold text-gray-900 drk:text-white">Numéro de téléphone</label>
-                        <div className="text-gray-900 text-sm p-2.5 w-[3px]">
+                        <div className="text-gray-900 text-sm p-2.5 ">
                             <PhoneInput
+                                inputStyle={{'width': '100%'}}
                                 placeholder={"33612345678"}
-                                
+
                                 country={'fr'}
                                 // value={tel ? tel : undefined}
                                 onChange={newPhone => setTel(newPhone)}
@@ -122,7 +123,7 @@ function Example() {
                         <input
                             type="email"
                             id="email"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit md:w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
                             placeholder="john.doe@company.com"
                             required
                         />
@@ -135,7 +136,7 @@ function Example() {
                         <input
                             type="text"
                             id="adresse-formen"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit md:w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
                             placeholder=""
                             required
                         />
@@ -146,7 +147,7 @@ function Example() {
                         <input
                             type="text"
                             id="adresse-postale"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit md:w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
                             placeholder=""
                             required
                         />
@@ -157,7 +158,7 @@ function Example() {
                         <input
                             type="date"
                             id="jour-arrivee"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit md:w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
                             min="2023-09-01"
                             max="2023-09-09"
                             required
@@ -165,7 +166,7 @@ function Example() {
                     </div>
                 </div>
                 
-                <div className="w-fit mb-4 text-sm font-bold text-gray-900">
+                <div className="w-fit md:w-full mb-4 text-sm font-bold text-gray-900">
                     Votre participation aux festivités:
                 </div>
 
@@ -200,21 +201,21 @@ function Example() {
                 </div>
 
                 <div className="my-8">
-                    <div className="w-fit my-4 text-sm font-bold text-gray-900">
+                    <div className="w-fit md:w-full my-4 text-sm font-bold text-gray-900">
                         Un petit mot?
                     </div>
                     <input
                         type="text"
                         id="word"
-                        className=" w-fit bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
+                        className=" w-fit md:w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit md:w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
                         placeholder="..."
                     />
 
                 </div>
-                <div className="w-full flex mt-20">
+                <div className="ww-full flex mt-20">
                     <button
                         type="submit"
-                        className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full px-5 my-4 py-4 text-center drk:bg-blue-600 drk:hover:bg-blue-700 drk:focus:ring-blue-800"
+                        className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm px-5 my-4 py-4 text-center drk:bg-blue-600 drk:hover:bg-blue-700 drk:focus:ring-blue-800"
                     >
                         Envoyer
                     </button>
