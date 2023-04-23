@@ -216,7 +216,7 @@
 }
 
 .banner-btn {
-    @apply font-bold py-3 w-40 text-3xl rounded-full;
+    @apply font-bold py-3 w-fit text-3xl rounded-full px-2;
 }
 .banner-btn-pink {
     @apply bg-green-800 text-white  transition-colors duration-500;
