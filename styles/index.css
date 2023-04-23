@@ -101,7 +101,7 @@
 }
 
 .header-nav-container {
-    @apply flex flex-col md:flex-row justify-between items-center md:text-xl
+    @apply w-full flex-row lg:flex lg:items-center lg:justify-between lg:w-auto lg:block pt-6 lg:pt-0 text-xl
 }
 
 .header-button {
@@ -109,7 +109,7 @@
 }
 
 .header-custom-link {
-    @apply  link-underline   m-4 text-white
+    @apply  link-underline  m-4 text-white w-fit
 }
 
 .link-underline {
