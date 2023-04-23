@@ -18,7 +18,7 @@ export default function WeddingListPage () {
                     <div id="anchor_one" />
                     <div className="page-content-bg p-20">
                         <div className="page-content-title">
-                            Nous sommes impatients de partager ce moment avec vous!
+                            Si vous voulez participer ...
                         </div>
                         <WeddingListContent/>
                     </div>   

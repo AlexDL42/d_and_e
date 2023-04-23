@@ -12,7 +12,7 @@ export default function Index() {
     <>
       <Layout>
           <Head>
-              <title>Mariagee de Delphine & Etienne - Formentera, 2023</title>
+              <title>Mariage de Delphine & Etienne - Formentera, 2023</title>
           </Head>
           <div className="page-frame">
               <div className="page-bg bg-homeCover text-black">
@@ -21,10 +21,11 @@ export default function Index() {
                   <div className="page-content-bg">
                       <RsvpHome/>
                       {/* <HomeContent/> */}
+
+                    <div className="banner-txt-title text-center my-5">
+                      See you soon
+                    </div>
                   </div>   
-                  <div className="page-content-bg banner-txt-title text-center my-5">
-                    See you soon
-                  </div>
               </div>
           </div>
       </Layout>

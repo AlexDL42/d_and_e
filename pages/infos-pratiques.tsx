@@ -8,7 +8,7 @@ export default function Page () {
       <>
         <Layout>
             <Head>
-                <title>Le programme</title>
+                <title>Infos Pratiques</title>
             </Head>
             <div className="page-frame">
                 <div className="page-bg bg-planningCover text-black">

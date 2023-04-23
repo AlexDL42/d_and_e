@@ -67,24 +67,6 @@ export const posts = [
       location: 'El Sueño, Calle de Porto Saler, 804, 07680 San Francisco, Illes Balears, Spain',
       locationUrl: 'https://goo.gl/maps/CcHm6LpDY3FDWhxA8',
       imageUrl:
-        'https://i.ibb.co/VHbFdkY/Whats-App-Image-2023-04-22-at-12-56-51.jpg',
+        'https://i.ibb.co/R9VB97z/Whats-App-Image-2023-04-23-at-14-23-49.jpg',
       },
-      {
-        title: 'Brunch au Pelayo 2',
-        id: '3',
-        description:
-        <div>
-          <div className="p-6">Après une grosse fiesta, rien de mieux que d’alterner entre paella, sangria, baignade et sieste sur la plage !</div>
-          <div className="p-6">Rejoignez-nous au <strong>Pelayo</strong>, une institution locale pour passer l’aprem farniente avec nous et nous remettre de nos émotions. Le chemin pour s’y rendre n'est pas le plus simple, mais le restaurant est facilement trouvable sur <a className="a-classic" href='https://goo.gl/maps/NbPR879sU4avqrHy7'>Google Maps</a>. </div>
-          <div className="p-6"><strong>Dress code:</strong> maillot de bain!</div>
-        </div>,
-        startDate: '2023-09-10',
-        startTime: '12:30',
-        endDate: '2023-09-10',
-        endTime: '16:00',
-        location: 'El Sueño, Calle de Porto Saler, 804, 07680 San Francisco, Illes Balears, Spain',
-        locationUrl: 'https://goo.gl/maps/CcHm6LpDY3FDWhxA8',
-        imageUrl:
-          'https://i.ibb.co/F4qGdbC/581fc9-d466ecbf17304b4d828890613eae4d3a-mv2.webp',
-        },
   ]

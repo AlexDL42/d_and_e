@@ -193,7 +193,7 @@
 }
 
 .img-post-card {
-    @apply h-full w-full h-[800px] object-cover
+    @apply h-full w-full h-[400px] object-cover 
 }
 
 .img-maps-card {

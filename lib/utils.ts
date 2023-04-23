@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------------------
-export const mailTo = "a.delfosselegat@gmail.com, delphine.hillard@gmail.com, etienne.pecnard@gmail.com";
+export const mailTo = "weddingdelpecs@gmail.com";
 
 export const buildHtmlRSVP = ({ firstName, lastName, phone, email, addressF, addressP, dStart, events, word})  => {
     let outHtml = `<p><strong>Someone submitted an RSVP!</strong></p><br>
