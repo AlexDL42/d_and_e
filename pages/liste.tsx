@@ -18,7 +18,7 @@ export default function WeddingListPage () {
                     <div id="anchor_one" />
                     <div className="page-content-bg py-20">
                         <div className="page-content-title">
-                            Si vous voulez participer ...
+                            Si vous souhaitez participer ...
                         </div>
                         <WeddingListContent/>
                     </div>   
