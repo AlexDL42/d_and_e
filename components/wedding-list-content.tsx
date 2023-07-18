@@ -32,7 +32,7 @@ export default function WeddingListContent() {
         <>
             <div className="wlc-container-0">
                 <div className="wlc-container-1">
-                    Participer Au Voyage de Noces
+                    Contribuer Au Voyage de Noces
                 </div>
 
                 <div className="wlc-container-2">

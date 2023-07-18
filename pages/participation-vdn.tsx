@@ -9,7 +9,7 @@ export default function WeddingListPage () {
       <>
         <Layout>
             <Head>
-                <title>Participer Au Voyage de Noces</title>
+                <title>Contribuer Au Voyage de Noces</title>
             </Head>
             <div className="page-frame">
                 <div className="page-bg bg-listCover text-white">

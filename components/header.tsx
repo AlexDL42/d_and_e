@@ -51,7 +51,7 @@ const Header = () => {
         </LinkCustom>
 
         <LinkCustom href="/participation-vdn/#anchor_one">
-          Participation au Voyage de Noces
+          Contribution au Voyage de Noces
         </LinkCustom>
 
         <Link href="/rsvp/#anchor_one">
