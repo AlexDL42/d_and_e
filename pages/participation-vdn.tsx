@@ -9,7 +9,7 @@ export default function WeddingListPage () {
       <>
         <Layout>
             <Head>
-                <title>Liste de Mariage de Delphine & Etienne</title>
+                <title>Participer Au Voyage de Noces</title>
             </Head>
             <div className="page-frame">
                 <div className="page-bg bg-listCover text-white">
@@ -17,9 +17,9 @@ export default function WeddingListPage () {
                     <div className="page-cover-buffer"/>
                     <div id="anchor_one" />
                     <div className="page-content-bg py-20">
-                        <div className="page-content-title">
+                        {/* <div className="page-content-title">
                             Si vous souhaitez participer ...
-                        </div>
+                        </div> */}
                         <WeddingListContent/>
                     </div>   
                 </div>

@@ -5,11 +5,34 @@ export default function WeddingListContent() {
         <>
             <div className="wlc-container-0">
                 <div className="wlc-container-1">
-                    Liste de Mariage
+                    Participer Au Voyage de Noces
                 </div>
 
                 <div className="wlc-container-2">
-                    Under construction... More to come
+                    Notre plus beau cadeau sera bien évidemment votre présence. Toutefois, si vous voulez contribuer à réaliser nos rêves d’évasion, voici un lien qui vous permettra de nous aider à partir au bout du monde en voyage de noces... 😊
+                </div>
+
+
+
+                <div className="grid gap-6 my-6 md:grid-cols-2">
+                    <div className="flex-row">
+                        <label className="block mb-2 text-sm font-bold text-gray-900">Titulaire du Compte</label>
+                        <div className="mb-2 text-sm font-bold text-gray-900">
+                            Madame HILLARD DELPHINE ou Monsieur PECNARD ETIENNE
+                        </div>
+                    </div>
+                    <div>
+                        <label className="block mb-2 text-sm font-bold text-gray-900">IBAN</label>
+                        <div className="mb-2 text-sm font-bold text-gray-900">
+                            FR76 1820 6002 9465 0901 6547 478
+                        </div>
+                    </div>
+                    <div>
+                        <label className="block mb-2 text-sm font-bold text-gray-900">BIC / SWIFT</label>
+                        <div className="mb-2 text-sm font-bold text-gray-900">
+                            AGRIFRPP882
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

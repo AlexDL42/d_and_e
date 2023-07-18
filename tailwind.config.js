@@ -20,7 +20,7 @@ module.exports = {
         'planningCover': "url('https://i.ibb.co/b2CZpQr/d-and-e-img-0.jpg')",
         'planningCoverOld': "url('https://rare-gallery.com/mocahbig/466717-boat-vehicle-water-sea-aerial-view-sailboats-top-view.jpg')",
         'rsvpCover': "url('https://i.ibb.co/b2CZpQr/d-and-e-img-0.jpg')",
-        'listCover': "url('https://apis.xogrp.com/media-api/images/72cf2f36-ba5a-4bb4-804c-90156ec0a36f')",
+        'listCover': "url('https://i.ibb.co/gw2YTCt/Whats-App-Image-2023-06-27-at-09-45-01-1.jpg')",
       },
       colors: {
         'accent-1': '#FAFAFA',

@@ -50,8 +50,8 @@ const Header = () => {
           Infos Pratiques
         </LinkCustom>
 
-        <LinkCustom href="/liste/#anchor_one">
-          Liste de Mariage
+        <LinkCustom href="/participation-vdn/#anchor_one">
+          Participation au Voyage de Noces
         </LinkCustom>
 
         <Link href="/rsvp/#anchor_one">
