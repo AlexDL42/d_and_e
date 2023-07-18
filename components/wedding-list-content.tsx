@@ -9,7 +9,7 @@ export default function WeddingListContent() {
                 </div>
 
                 <div className="wlc-container-2">
-                    Notre plus beau cadeau sera bien évidemment votre présence. Toutefois, si vous voulez contribuer à réaliser nos rêves d’évasion, voici un lien qui vous permettra de nous aider à partir au bout du monde en voyage de noces... 😊
+                    Notre plus beau cadeau sera bien évidemment votre présence. Toutefois, si vous voulez contribuer à réaliser nos rêves d’évasion, vous pouvez participer à la cagnotte de notre Voyage de Noces via le RIB ci-dessous pour nous aider à partir au bout du monde... 😊
                 </div>
 
 
