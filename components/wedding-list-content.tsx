@@ -31,10 +31,6 @@ export default function WeddingListContent() {
     return (
         <>
             <div className="wlc-container-0">
-                <div className="wlc-container-1">
-                    Contribuer Au Voyage de Noces
-                </div>
-
                 <div className="wlc-container-2">
                     <div>
                         Notre plus beau cadeau sera bien évidemment votre présence.
@@ -44,28 +40,28 @@ export default function WeddingListContent() {
                     </div>
                 </div>
 
-                <div className="flex flex-row my-6 justify-between">
-                    <div className="mx-2 text-center">
-                        <div className="mb-4 text-sm font-bold text-gray-900">
+                <div className="flex flex-col my-6 justify-between md:flex-row">
+                    <div className="mx-2 my-2 text-center">
+                        <div className="mb-2 font-bold text-gray-900">
                             Titulaire du Compte
                         </div>
-                        <div className="mb-2 text-sm font-bold text-gray-900">
+                        <div className="mb-2 text-gray-900">
                             Madame HILLARD DELPHINE ou Monsieur PECNARD ETIENNE
                         </div>
                     </div>
-                    <div className="mx-2 text-center">
-                        <div className="mb-4 text-sm font-bold text-gray-900">
+                    <div className="mx-2 my-2 text-center">
+                        <div className="mb-2 font-bold text-gray-900">
                             IBAN
                         </div>
-                        <div className="mb-2 text-sm font-bold text-gray-900">
+                        <div className="mb-2 text-gray-900">
                             FR76 1820 6002 9465 0901 6547 478
                         </div>
                     </div>
-                    <div className="mx-2 text-center">
-                        <div className="mb-4 text-sm font-bold text-gray-900">
+                    <div className="mx-2 my-2 text-center">
+                        <div className="mb-2 font-bold text-gray-900">
                             BIC / SWIFT
                         </div>
-                        <div className="mb-2 text-sm font-bold text-gray-900">
+                        <div className="mb-2 text-gray-900">
                             AGRIFRPP882
                         </div>
                     </div>

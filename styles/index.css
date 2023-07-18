@@ -61,15 +61,15 @@
 
   /* WeddingListContent */
   .wlc-container-0 {
-    @apply bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 m-20 p-2 lg:p-20
+    @apply bg-white bg-opacity-100 border-black rounded-lg border-2 border-opacity-50 my-20 p-2 lg:p-20
   }
 
   .wlc-container-1 {
-    @apply banner-btn text-center banner-btn-pink-no-h
+    @apply banner-btn text-center banner-btn-pink-no-h p-40
   }
 
   .wlc-container-2 {
-    @apply text-black text-center m-1 lg:m-10 text-xl font-bold
+    @apply text-black text-center m-1 lg:m-10 text-xl p-10
   }
 /* Layout */
 
