@@ -23,7 +23,7 @@ export default function WeddingListContent() {
             },
             body: JSON.stringify(out),
         })
-        
+
         setFinished(true)
     }
 
@@ -86,8 +86,9 @@ export default function WeddingListContent() {
                                 </div>
                                 <textarea
                                     id="word"
-                                    className=" w-full h-[15vh] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
-                                    placeholder="..."
+                                    className=" w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 drk:bg-gray-700 drk:border-gray-600 drk:placeholder-gray-400 drk:text-white drk:focus:ring-blue-500 drk:focus:border-blue-500"
+                                    placeholder=""
+                                    rows={5}
                                 >
                                 </textarea>
 

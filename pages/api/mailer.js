@@ -35,7 +35,7 @@ export default async (req, res) => {
     case 'livredor':
       const { msg } = req.body;
       mailSubject += `Contribution au Livre d'Or`;
-      outHtml += `<p><strong>Quelqu'un vous a laissé un message sur le Livre d'Or!</strong></p><p style='margin-left: 40px'>${msg}</p>`
+      outHtml += `<p><strong>Quelqu'un vous a laissé un message sur le Livre d'Or!</strong></p><p style='margin-left: 40px;white-space: pre-line'>${msg}</p>`
       break
     default:
       mailSubject += `Unknown mail type: ${mailType}`;
