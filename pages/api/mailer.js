@@ -32,12 +32,18 @@ export default async (req, res) => {
       outHtml += `<p><strong>Quelqu'un vous suggère une chanson!</strong></p><p style='margin-left: 40px'>${song}</p>`
       break
 
+    case 'livredor':
+      const { msg } = req.body;
+      mailSubject += `Contribution au Livre d'Or`;
+      outHtml += `<p><strong>Quelqu'un vous a laissé un message sur le Livre d'Or!</strong></p><p style='margin-left: 40px'>${msg}</p>`
+      break
     default:
       mailSubject += `Unknown mail type: ${mailType}`;
       outHtml += `<p>Unknown email type sent: ${mailType}, please contact dev team.`
   }
 
 
+  
   try {
     await mailTransporter.sendMail({
       from: process.env.SMTP_USER,
@@ -45,8 +51,13 @@ export default async (req, res) => {
       subject: `${mailSubject}`,
       html: `${outHtml}`
     });
+
   } catch (error) {
+
+    
     return res.status(500).json({ error: error.message || error.toString() });
   }
+
+  
   return res.status(200).json({ error: "" });
 };
