@@ -8,7 +8,7 @@ type Props = {
 
 const Alert = ({ preview }: Props) => {
   
-  const dateEvt = new Date(2023, 9, 9, 18, 0, 0, 0);
+  const dateEvt = new Date(2023, 8, 9, 18, 0, 0, 0);
   const precisionTimer = "d" //['d', 'h', 'm', 's']
   const [alertStr, setAlertStr] = useState(() => {
     const out = buildStrTimeLeft({'dateEnd':dateEvt, 'msgEnd': "And... It's on!", 'precision': precisionTimer})
