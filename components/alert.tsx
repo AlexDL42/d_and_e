@@ -11,13 +11,13 @@ const Alert = ({ preview }: Props) => {
   const dateEvt = new Date(2023, 8, 9, 18, 0, 0, 0);
   const precisionTimer = "d" //['d', 'h', 'm', 's']
   const [alertStr, setAlertStr] = useState(() => {
-    const out = buildStrTimeLeft({'dateEnd':dateEvt, 'msgEnd': "And... It's on!", 'precision': precisionTimer})
+    const out = buildStrTimeLeft({'dateEnd':dateEvt, 'msgEnd': "It's on!", 'precision': precisionTimer})
     return out
   })
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      const tmp = buildStrTimeLeft({'dateEnd':dateEvt, 'msgEnd': "And... It's on!", 'precision': precisionTimer})
+      const tmp = buildStrTimeLeft({'dateEnd':dateEvt, 'msgEnd': "It's on!", 'precision': precisionTimer})
       setAlertStr(tmp);
 
     }, 1000);
